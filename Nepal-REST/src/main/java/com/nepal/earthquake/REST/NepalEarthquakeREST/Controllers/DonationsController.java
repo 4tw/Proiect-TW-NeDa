@@ -23,7 +23,7 @@ public class DonationsController {
     //TODO response body for delete/update
 
 
-    @RequestMapping(value = "/remove/donor/{donorName}", method = RequestMethod.POST)
+    @RequestMapping(value = "/remove/donor/{donorName}", method = RequestMethod.DELETE)
     public void deleteDonation ( @PathVariable("donorName") String donorName){
         donationsService.removeDonationsByDonor(donorName);
     }

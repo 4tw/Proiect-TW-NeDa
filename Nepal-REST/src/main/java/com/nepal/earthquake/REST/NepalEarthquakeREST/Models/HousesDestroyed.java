@@ -9,7 +9,7 @@ import javax.persistence.*;
 public class HousesDestroyed {
     @Id
     @GeneratedValue(strategy =  GenerationType.AUTO)
-    @Column(name = "`id`")
+    @Column(name = "`ID`")
     private int id;
 
     @Column(length = 50, name = "`district`")

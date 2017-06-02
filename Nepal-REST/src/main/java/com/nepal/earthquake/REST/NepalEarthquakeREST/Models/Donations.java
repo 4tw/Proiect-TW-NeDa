@@ -10,7 +10,7 @@ import java.util.Date;
  * Created by Robert on 5/20/2017.
  */
 @Entity
-@Table(name = "`Donations`")
+@Table(name = "`donations`")
 public class Donations {
 
     @Id
@@ -27,8 +27,8 @@ public class Donations {
     @Column( length = 50, name = "`Donor`")
     private String donor;
 
-    @Column( length = 50, nullable = false, name = "`Net_donation`")
-    private int netDonation;
+    @Column( name = "`Net_donation`")
+    private Double netDonation;
 
     public int getID() {
         return ID;
@@ -62,11 +62,11 @@ public class Donations {
         this.donor = donor;
     }
 
-    public int getNetDonation() {
+    public Double getNetDonation() {
         return netDonation;
     }
 
-    public void setNetDonation(int netDonation) {
+    public void setNetDonation(Double netDonation) {
         this.netDonation = netDonation;
     }
 }

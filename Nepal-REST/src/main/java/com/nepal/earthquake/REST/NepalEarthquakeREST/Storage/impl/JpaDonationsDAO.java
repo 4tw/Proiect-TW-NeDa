@@ -42,7 +42,7 @@ public class JpaDonationsDAO implements DonationsDAO {
 
     @Override
     public List<Donations> getDonationsSumByFundation() {
-        Query query = entityManager.createQuery("SELECT id, donation_type, sum(net_donation) FROM `donations` group by donation_type", Donations.class);
+        Query query = entityManager.createQuery("SELECT id, donation_type, sum(net_donation) FROM Donations group by donation_type", Donations.class);
         return query.getResultList();
     }
 
@@ -81,13 +81,14 @@ public class JpaDonationsDAO implements DonationsDAO {
     @Override
     public List<Donations> getLastDonations(int last) {
         TypedQuery<Donations> query = entityManager.createQuery(
-                "select d from Donations d order by Net_donations desc", Donations.class);
+                "select d from Donations d order by Net_donation asc", Donations.class);
         query.setMaxResults(last);
         return query.getResultList();
     }
 
     @Override
     public List<Donations> getDonationsByDonor(String donor) {
+        donor = "%" + donor + "%";
         TypedQuery<Donations> query = entityManager.createQuery(
                 "select d from Donations d where Donor like :donorName",Donations.class)
                 .setParameter("donorName", donor);

@@ -10,7 +10,7 @@ import javax.persistence.*;
 public class DeadMen {
     @Id
     @GeneratedValue(strategy =  GenerationType.AUTO)
-    @Column(name = "`id`")
+    @Column(name = "`ID`")
     private int id;
 
     @Column(length = 50, name = "`district`")
