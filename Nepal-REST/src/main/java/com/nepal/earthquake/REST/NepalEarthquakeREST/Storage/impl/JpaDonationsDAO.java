@@ -40,14 +40,16 @@ public class JpaDonationsDAO implements DonationsDAO {
         return query.getResultList();
     }
 
+    //TODO return object[], not donations
     @Override
-    public List<Donations> getDonationsSumByFundation() {
-        Query query = entityManager.createQuery("SELECT id, donation_type, sum(net_donation) FROM Donations group by donation_type", Donations.class);
+    public List<Object[]> getDonationsSumByFundation() {
+        Query query = entityManager.createQuery("SELECT donationType, sum(netDonation) FROM Donations group by donationType", Object[].class);
         return query.getResultList();
     }
 
     @Override
     public List<Object[]> getDonationsByFundation(String fundation, int limit) {
+        fundation = "%" + fundation + "%";
         TypedQuery<Object[]> query = entityManager.createQuery("select d.donationType, d.donor, d.netDonation " +
                 "  from Donations d where Donation_Type like :fundation " +
                 "order by Net_donation desc", Object[].class)
@@ -61,7 +63,7 @@ public class JpaDonationsDAO implements DonationsDAO {
     public List<Donations> getDetailedDonationsByFundation(String fundation, int limit) {
         TypedQuery<Donations> query = entityManager.createQuery("select d " +
                 "  from Donations d where Donation_Type like :fundation " +
-                "order by Net_donation desc", Donations.class)
+                "order by netDonation desc", Donations.class)
                 .setParameter("fundation", fundation);
         if(limit > 0)
             query.setMaxResults(limit);
@@ -72,7 +74,7 @@ public class JpaDonationsDAO implements DonationsDAO {
     public List<Donations> getTopDonations(int top) {
 
         TypedQuery<Donations> query = entityManager.createQuery(
-                "select d from Donations d order by Net_donation desc", Donations.class);
+                "select d from Donations d order by netDonation desc", Donations.class);
 
         query.setMaxResults(top);
         return query.getResultList();

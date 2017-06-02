@@ -17,7 +17,7 @@ public interface DonationsDAO {
 
     List<Donations> getAllDonations();
 
-    List<Donations> getDonationsSumByFundation();
+    List<Object[]> getDonationsSumByFundation();
 
     List<Object[]> getDonationsByFundation(String fundation, int limit);
 

@@ -75,7 +75,7 @@ public class DonationsController {
     }
 
     @RequestMapping(value = "/sumByFundation", method = RequestMethod.GET)
-    public List<Donations> getDonationsSumByFundation(){
+    public List<Object[]> getDonationsSumByFundation(){
         return donationsDAO.getDonationsSumByFundation();
     }
 
