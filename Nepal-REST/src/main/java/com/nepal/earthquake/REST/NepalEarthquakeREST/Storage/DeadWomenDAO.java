@@ -21,7 +21,7 @@ public interface DeadWomenDAO {
 
     List<DeadWomen> getbyDevReg(String devReg);
 
-    List<DeadWomen> getByDistrict(String district);
+    DeadWomen getByDistrict(String district);
 
     DeadWomen getById(int id);
 

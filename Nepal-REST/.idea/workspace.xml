@@ -3,12 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="0b771b81-68d6-4159-ab14-e64fbde2c5ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Controllers/HousesDestroyedController.java" afterPath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Controllers/HousesDestroyedController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/HousesDestroyedService.java" afterPath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/HousesDestroyedService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/impl/HousesDestroyedServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/impl/HousesDestroyedServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/HousesDestroyedDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/HousesDestroyedDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Controllers/DeadWomenController.java" afterPath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Controllers/DeadWomenController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Models/DeadWomen.java" afterPath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Models/DeadWomen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/DeadWomenService.java" afterPath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/DeadWomenService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/impl/DeadWomenServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/impl/DeadWomenServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/DeadWomenDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/DeadWomenDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/impl/JpaDeadMenDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/impl/JpaDeadMenDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/impl/JpaDeadWomenDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/impl/JpaDeadWomenDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/impl/JpaHousesDestroyedDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/impl/JpaHousesDestroyedDAO.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,21 +25,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DonationsController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Controllers/DonationsController.java">
+      <file leaf-file-name="JpaDeadWomenDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/impl/JpaDeadWomenDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="82" column="21" lean-forward="false" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HousesDestroyedDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/HousesDestroyedDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+            <state relative-caret-position="192">
+              <caret line="92" column="36" lean-forward="false" selection-start-line="92" selection-start-column="36" selection-end-line="92" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -47,41 +38,28 @@
       <file leaf-file-name="JpaDonationsDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/impl/JpaDonationsDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1258">
+            <state relative-caret-position="952">
               <caret line="87" column="35" lean-forward="false" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JpaHousesDestroyedDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/impl/JpaHousesDestroyedDAO.java">
+      <file leaf-file-name="JpaDeathsInjuredDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/impl/JpaDeathsInjuredDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-              <folding>
-                <element signature="e#742#743#0" expanded="true" />
-                <element signature="e#799#800#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeadMenDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/DeadMenDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+            <state relative-caret-position="289">
+              <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HousesDestroyedService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/HousesDestroyedService.java">
+      <file leaf-file-name="JpaDeadMenDAO.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/impl/JpaDeadMenDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="29" selection-end-column="54" />
+            <state relative-caret-position="107">
+              <caret line="87" column="109" lean-forward="false" selection-start-line="87" selection-start-column="109" selection-end-line="87" selection-end-column="109" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,65 +67,113 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HousesDestroyedServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/impl/HousesDestroyedServiceImpl.java">
+      <file leaf-file-name="DeadWomenServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/impl/DeadWomenServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="206">
+              <caret line="51" column="25" lean-forward="true" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#702#703#0" expanded="true" />
-                <element signature="e#752#753#0" expanded="true" />
-                <element signature="e#1933#1934#0" expanded="true" />
-                <element signature="e#1994#1995#0" expanded="true" />
-                <element signature="e#2069#2070#0" expanded="true" />
-                <element signature="e#2134#2135#0" expanded="true" />
-                <element signature="e#2194#2195#0" expanded="true" />
-                <element signature="e#2221#2222#0" expanded="true" />
-                <element signature="e#2299#2300#0" expanded="true" />
-                <element signature="e#2368#2369#0" expanded="true" />
+                <element signature="e#727#728#0" expanded="true" />
+                <element signature="e#771#772#0" expanded="true" />
+                <element signature="e#1745#1746#0" expanded="true" />
+                <element signature="e#1806#1807#0" expanded="true" />
+                <element signature="e#1877#1878#0" expanded="true" />
+                <element signature="e#1932#1933#0" expanded="true" />
+                <element signature="e#2001#2002#0" expanded="true" />
+                <element signature="e#2060#2061#0" expanded="true" />
+                <element signature="e#2114#2115#0" expanded="true" />
+                <element signature="e#2161#2162#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HousesDestroyedController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Controllers/HousesDestroyedController.java">
+      <file leaf-file-name="DeadMenServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/impl/DeadMenServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="72" column="40" lean-forward="true" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
+            <state relative-caret-position="-119">
+              <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
               <folding>
-                <element signature="e#845#846#0" expanded="true" />
-                <element signature="e#899#900#0" expanded="true" />
-                <element signature="e#1217#1218#0" expanded="true" />
-                <element signature="e#1282#1283#0" expanded="true" />
-                <element signature="e#2464#2465#0" expanded="true" />
-                <element signature="e#2533#2534#0" expanded="true" />
-                <element signature="e#2582#2583#0" expanded="true" />
-                <element signature="e#2609#2610#0" expanded="true" />
-                <element signature="e#2737#2738#0" expanded="true" />
-                <element signature="e#2810#2811#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DonationServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/impl/DonationServiceImpl.java">
+      <file leaf-file-name="DeathsInjuredController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Controllers/DeathsInjuredController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="351">
+              <caret line="39" column="39" lean-forward="false" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DonationsService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/DonationsService.java">
+      <file leaf-file-name="DeadWomenController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Controllers/DeadWomenController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="21" column="81" lean-forward="false" selection-start-line="21" selection-start-column="81" selection-end-line="21" selection-end-column="81" />
-              <folding />
+            <state relative-caret-position="153">
+              <caret line="39" column="42" lean-forward="true" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
+              <folding>
+                <element signature="e#770#771#0" expanded="true" />
+                <element signature="e#818#819#0" expanded="true" />
+                <element signature="e#940#941#0" expanded="true" />
+                <element signature="e#994#995#0" expanded="true" />
+                <element signature="e#2260#2261#0" expanded="true" />
+                <element signature="e#2319#2320#0" expanded="true" />
+                <element signature="e#2453#2454#0" expanded="true" />
+                <element signature="e#2516#2517#0" expanded="true" />
+                <element signature="e#2623#2624#0" expanded="true" />
+                <element signature="e#2674#2675#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeadWomen.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Models/DeadWomen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+              <folding>
+                <element signature="e#748#749#0" expanded="true" />
+                <element signature="e#781#782#0" expanded="true" />
+                <element signature="e#809#810#0" expanded="true" />
+                <element signature="e#844#845#0" expanded="true" />
+                <element signature="e#875#876#0" expanded="true" />
+                <element signature="e#923#924#0" expanded="true" />
+                <element signature="e#963#964#0" expanded="true" />
+                <element signature="e#1007#1008#0" expanded="true" />
+                <element signature="e#1047#1048#0" expanded="true" />
+                <element signature="e#1113#1114#0" expanded="true" />
+                <element signature="e#1171#1172#0" expanded="true" />
+                <element signature="e#1202#1203#0" expanded="true" />
+                <element signature="e#1229#1230#0" expanded="true" />
+                <element signature="e#1269#1270#0" expanded="true" />
+                <element signature="e#1301#1302#0" expanded="true" />
+                <element signature="e#1346#1347#0" expanded="true" />
+                <element signature="e#1387#1388#0" expanded="true" />
+                <element signature="e#1455#1456#0" expanded="true" />
+                <element signature="e#1515#1516#0" expanded="true" />
+                <element signature="e#1545#1546#0" expanded="true" />
+                <element signature="e#1574#1575#0" expanded="true" />
+                <element signature="e#1615#1616#0" expanded="true" />
+                <element signature="e#1651#1652#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeadWomenService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/DeadWomenService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="29" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -176,8 +202,8 @@
       <find>DeadMen</find>
     </findStrings>
     <replaceStrings>
-      <replace>DeadWomen</replace>
       <replace>HousesDestroyed</replace>
+      <replace>DeadWomen</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -211,12 +237,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Controllers/DamagesController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/DonationsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/impl/DonationServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/DeadWomenDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Controllers/AftershocksController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/DeadWomenService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Controllers/DeadWomenController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Models/DeathsAndInjured.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Models/Aftershocks.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Models/Donations.java" />
@@ -227,16 +250,20 @@
         <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/DeadMenService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/impl/DeadMenServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Models/DeadMen.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Models/DeadWomen.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Models/HousesDestroyed.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/impl/JpaDeadMenDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Controllers/DeadMenController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/impl/JpaDeadWomenDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/HousesDestroyedDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/HousesDestroyedService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/impl/HousesDestroyedServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Controllers/HousesDestroyedController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/impl/JpaHousesDestroyedDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/DeadWomenService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/DeadWomenDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Models/DeadWomen.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/impl/JpaDeadWomenDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/impl/DeadWomenServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Controllers/DeadWomenController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/impl/JpaDeadMenDAO.java" />
       </list>
     </option>
   </component>
@@ -1048,7 +1075,8 @@
       <workItem from="1496398271417" duration="7155000" />
       <workItem from="1496428873727" duration="4580000" />
       <workItem from="1496437640446" duration="648000" />
-      <workItem from="1496471235073" duration="10155000" />
+      <workItem from="1496471235073" duration="10780000" />
+      <workItem from="1496506352754" duration="2810000" />
     </task>
     <task id="LOCAL-00001" summary="- Slight modifications, getDonationsByFundation() controller doesn't work.">
       <created>1495466474065</created>
@@ -1148,11 +1176,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496478197475</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="HousesDestroyed Controller/Model/Service/DAO">
+      <created>1496482838860</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1496482838860</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105748000" />
+    <option name="totallyTimeSpent" value="109183000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1169,12 +1204,11 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.23524962" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.2397882" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1186,18 +1220,19 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.76475036" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.7602118" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.49092284" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.48789713" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3472012" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3524962" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.4969743" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.4969743" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1220,7 +1255,9 @@
     <MESSAGE value="Fixed a lot of mistakes on anything related to Donations + operations on DeadMen/Women" />
     <MESSAGE value="Updated Donations" />
     <MESSAGE value="DeadMen Controller/Model/Service/DAO" />
-    <option name="LAST_COMMIT_MESSAGE" value="DeadMen Controller/Model/Service/DAO" />
+    <MESSAGE value="HousesDestroyed Controller/Model/Service/DAO" />
+    <MESSAGE value="DeadWomen Controller/Model/Service/DAO + small JPADeadMenImpl adjustment" />
+    <option name="LAST_COMMIT_MESSAGE" value="DeadWomen Controller/Model/Service/DAO + small JPADeadMenImpl adjustment" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1283,13 +1320,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/DeadWomenService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/DeathsInjuredDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -1301,7 +1331,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
           <caret line="70" column="5" lean-forward="false" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1319,16 +1348,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Controllers/DeathsInjuredController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="39" column="39" lean-forward="false" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Models/Donations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -1340,7 +1359,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1348,7 +1366,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1364,7 +1381,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1372,7 +1388,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1384,47 +1399,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/impl/DeadWomenServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Models/DeadWomen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="54" lean-forward="false" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Models/HousesDestroyed.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="23" column="54" lean-forward="false" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/impl/DeadMenServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#679#680#0" expanded="true" />
-            <element signature="e#1581#1582#0" expanded="true" />
-            <element signature="e#1640#1641#0" expanded="true" />
-            <element signature="e#1709#1710#0" expanded="true" />
-            <element signature="e#1762#1763#0" expanded="true" />
-            <element signature="e#1829#1830#0" expanded="true" />
-            <element signature="e#1886#1887#0" expanded="true" />
-            <element signature="e#1938#1939#0" expanded="true" />
-            <element signature="e#1983#1984#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1466,72 +1445,20 @@
         <state relative-caret-position="-199">
           <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
-            <element signature="e#769#770#0" expanded="true" />
-            <element signature="e#819#820#0" expanded="true" />
-            <element signature="e#1673#1674#0" expanded="true" />
-            <element signature="e#1719#1720#0" expanded="true" />
-            <element signature="e#2510#2511#0" expanded="true" />
-            <element signature="e#2559#2560#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Controllers/DeadWomenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/DeadWomenDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/impl/JpaDeadWomenDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="33" column="18" lean-forward="false" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/impl/JpaDeadMenDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="82" column="39" lean-forward="true" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/impl/JpaDeathsInjuredDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/DeadMenService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#769#770#0" expanded="false" />
+            <element signature="e#819#820#0" expanded="false" />
+            <element signature="e#1673#1674#0" expanded="false" />
+            <element signature="e#1719#1720#0" expanded="false" />
+            <element signature="e#2510#2511#0" expanded="false" />
+            <element signature="e#2559#2560#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/DeadMenDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+        <state relative-caret-position="408">
+          <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -1554,7 +1481,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Controllers/DonationsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
+        <state relative-caret-position="1054">
           <caret line="82" column="21" lean-forward="false" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
           <folding />
         </state>
@@ -1562,7 +1489,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/HousesDestroyedService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state relative-caret-position="153">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="29" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1573,19 +1500,19 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/impl/HousesDestroyedServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#1933#1934#0" expanded="true" />
-            <element signature="e#1994#1995#0" expanded="true" />
-            <element signature="e#2069#2070#0" expanded="true" />
-            <element signature="e#2134#2135#0" expanded="true" />
-            <element signature="e#2194#2195#0" expanded="true" />
-            <element signature="e#2221#2222#0" expanded="true" />
-            <element signature="e#2299#2300#0" expanded="true" />
-            <element signature="e#2368#2369#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="false" />
+            <element signature="e#752#753#0" expanded="false" />
+            <element signature="e#1933#1934#0" expanded="false" />
+            <element signature="e#1994#1995#0" expanded="false" />
+            <element signature="e#2069#2070#0" expanded="false" />
+            <element signature="e#2134#2135#0" expanded="false" />
+            <element signature="e#2194#2195#0" expanded="false" />
+            <element signature="e#2221#2222#0" expanded="false" />
+            <element signature="e#2299#2300#0" expanded="false" />
+            <element signature="e#2368#2369#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1598,17 +1525,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/impl/JpaDonationsDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="87" column="35" lean-forward="false" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/impl/JpaHousesDestroyedDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="119">
           <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
           <folding>
             <element signature="e#742#743#0" expanded="true" />
@@ -1619,19 +1538,159 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Controllers/HousesDestroyedController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="72" column="40" lean-forward="true" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
+        <state relative-caret-position="192">
+          <caret line="72" column="40" lean-forward="false" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/DeadMenService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="29" column="59" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="29" selection-end-column="59" />
           <folding>
-            <element signature="e#845#846#0" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
-            <element signature="e#1217#1218#0" expanded="true" />
-            <element signature="e#1282#1283#0" expanded="true" />
-            <element signature="e#2464#2465#0" expanded="true" />
-            <element signature="e#2533#2534#0" expanded="true" />
-            <element signature="e#2582#2583#0" expanded="true" />
-            <element signature="e#2609#2610#0" expanded="true" />
-            <element signature="e#2737#2738#0" expanded="true" />
-            <element signature="e#2810#2811#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/DeadWomenDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Controllers/DeathsInjuredController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="39" column="39" lean-forward="false" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/DeadWomenService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="29" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Models/DeadWomen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+          <folding>
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#781#782#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#844#845#0" expanded="true" />
+            <element signature="e#875#876#0" expanded="true" />
+            <element signature="e#923#924#0" expanded="true" />
+            <element signature="e#963#964#0" expanded="true" />
+            <element signature="e#1007#1008#0" expanded="true" />
+            <element signature="e#1047#1048#0" expanded="true" />
+            <element signature="e#1113#1114#0" expanded="true" />
+            <element signature="e#1171#1172#0" expanded="true" />
+            <element signature="e#1202#1203#0" expanded="true" />
+            <element signature="e#1229#1230#0" expanded="true" />
+            <element signature="e#1269#1270#0" expanded="true" />
+            <element signature="e#1301#1302#0" expanded="true" />
+            <element signature="e#1346#1347#0" expanded="true" />
+            <element signature="e#1387#1388#0" expanded="true" />
+            <element signature="e#1455#1456#0" expanded="true" />
+            <element signature="e#1515#1516#0" expanded="true" />
+            <element signature="e#1545#1546#0" expanded="true" />
+            <element signature="e#1574#1575#0" expanded="true" />
+            <element signature="e#1615#1616#0" expanded="true" />
+            <element signature="e#1651#1652#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/impl/JpaDeathsInjuredDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/impl/JpaDonationsDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="87" column="35" lean-forward="false" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/impl/DeadMenServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Services/impl/DeadWomenServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="51" column="25" lean-forward="true" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#1745#1746#0" expanded="true" />
+            <element signature="e#1806#1807#0" expanded="true" />
+            <element signature="e#1877#1878#0" expanded="true" />
+            <element signature="e#1932#1933#0" expanded="true" />
+            <element signature="e#2001#2002#0" expanded="true" />
+            <element signature="e#2060#2061#0" expanded="true" />
+            <element signature="e#2114#2115#0" expanded="true" />
+            <element signature="e#2161#2162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Controllers/DeadWomenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="39" column="42" lean-forward="true" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
+          <folding>
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#818#819#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+            <element signature="e#2260#2261#0" expanded="true" />
+            <element signature="e#2319#2320#0" expanded="true" />
+            <element signature="e#2453#2454#0" expanded="true" />
+            <element signature="e#2516#2517#0" expanded="true" />
+            <element signature="e#2623#2624#0" expanded="true" />
+            <element signature="e#2674#2675#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/impl/JpaDeadWomenDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="92" column="36" lean-forward="false" selection-start-line="92" selection-start-column="36" selection-end-line="92" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Storage/impl/JpaDeadMenDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="87" column="109" lean-forward="false" selection-start-line="87" selection-start-column="109" selection-end-line="87" selection-end-column="109" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

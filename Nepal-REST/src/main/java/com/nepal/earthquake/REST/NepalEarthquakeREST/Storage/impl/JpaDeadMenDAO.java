@@ -85,7 +85,7 @@ public class JpaDeadMenDAO implements DeadMenDAO{
 
     @Override
     public List<Object[]> getSimpleResultByDevRegn(String devReg) {
-        TypedQuery<Object[]> query = entityManager.createQuery("select distinct dm.district, dm.number, dw.number " +
+        TypedQuery<Object[]> query = entityManager.createQuery("select distinct dm.district, ( 0 - dm.number), dw.number " +
                 "from DeadMen dm, DeadWomen dw where dm.district = dw.district and " +
                 "dm.developmentRegion like :devReg", Object[].class)
                 .setParameter("devReg", devReg);

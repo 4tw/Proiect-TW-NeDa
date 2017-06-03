@@ -2,6 +2,7 @@ package com.nepal.earthquake.REST.NepalEarthquakeREST.Storage.impl;
 
 import com.nepal.earthquake.REST.NepalEarthquakeREST.Models.DeadWomen;
 import com.nepal.earthquake.REST.NepalEarthquakeREST.Storage.DeadWomenDAO;
+import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -13,6 +14,7 @@ import java.util.List;
 /**
  * Created by Robert on 5/30/2017.
  */
+@Repository
 public class JpaDeadWomenDAO implements DeadWomenDAO {
 
     @PersistenceContext
@@ -64,12 +66,12 @@ public class JpaDeadWomenDAO implements DeadWomenDAO {
     }
 
     @Override
-    public List<DeadWomen> getByDistrict(String district) {
+    public DeadWomen getByDistrict(String district) {
         TypedQuery<DeadWomen> query = entityManager.createQuery("select d from DeadWomen d where " +
                 "district like :district", DeadWomen.class)
                 .setParameter("district",district);
 
-        return query.getResultList();
+        return query.getSingleResult();
     }
 
     @Override
@@ -83,6 +85,11 @@ public class JpaDeadWomenDAO implements DeadWomenDAO {
 
     @Override
     public List<Object[]> getSimpleResultByDevRegn(String devReg) {
-        return null;
+        devReg = "%" + devReg + "%";
+        TypedQuery<Object[]> query = entityManager.createQuery("select d.district, d.number from DeadWomen d " +
+                "where developmentRegion like :devReg", Object[].class)
+                .setParameter("devReg", devReg);
+
+        return query.getResultList();
     }
 }
