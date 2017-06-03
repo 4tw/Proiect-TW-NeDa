@@ -5,7 +5,9 @@ import com.nepal.earthquake.REST.NepalEarthquakeREST.Storage.DeadWomenDAO;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.TableGenerator;
 import javax.persistence.TypedQuery;
+import javax.transaction.Transactional;
 import java.util.List;
 
 /**
@@ -16,17 +18,20 @@ public class JpaDeadWomenDAO implements DeadWomenDAO {
     @PersistenceContext
     private EntityManager entityManager;
 
+    @Transactional
     @Override
     public void delete(DeadWomen deadWomen) {
         entityManager.remove(deadWomen);
     }
 
+    @Transactional
     @Override
     public DeadWomen add(DeadWomen deadWomen) {
         entityManager.persist(deadWomen);
         return deadWomen;
     }
 
+    @Transactional
     @Override
     public DeadWomen update(DeadWomen deadWomen) {
         entityManager.merge(deadWomen);

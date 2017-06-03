@@ -10,9 +10,9 @@ import java.util.List;
 public interface HousesDestroyedDAO {
     void delete(HousesDestroyed housesDestroyed);
 
-    void update(HousesDestroyed housesDestroyed);
+    HousesDestroyed update(HousesDestroyed housesDestroyed);
 
-    void add(HousesDestroyed housesDestroyed);
+    HousesDestroyed add(HousesDestroyed housesDestroyed);
 
     List<HousesDestroyed> getAll();
 
@@ -20,7 +20,9 @@ public interface HousesDestroyedDAO {
 
     List<HousesDestroyed> getByDevReg(String devReg);
 
-    List<HousesDestroyed> getByDistrict(String district);
+    HousesDestroyed getByDistrict(String district);
+
+    List<Object[]> getSimpleResultByZone(String zone);
 
 
 }
