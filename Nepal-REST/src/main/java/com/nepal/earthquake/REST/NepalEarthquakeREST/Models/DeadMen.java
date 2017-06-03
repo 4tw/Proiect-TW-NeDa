@@ -22,9 +22,57 @@ public class DeadMen {
     @Column(length = 50, name = "`zone`")
     private String zone;
 
-    @Column(length = 50, name = "`geographical_region")
+    @Column(length = 50, name = "`geographical_region`")
     private String geographicalRegion;
 
     @Column(name = "`number`")
     private int number;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getDistrict() {
+        return district;
+    }
+
+    public void setDistrict(String district) {
+        this.district = district;
+    }
+
+    public String getDevelopmentRegion() {
+        return developmentRegion;
+    }
+
+    public void setDevelopmentRegion(String developmentRegion) {
+        this.developmentRegion = developmentRegion;
+    }
+
+    public String getZone() {
+        return zone;
+    }
+
+    public void setZone(String zone) {
+        this.zone = zone;
+    }
+
+    public String getGeographicalRegion() {
+        return geographicalRegion;
+    }
+
+    public void setGeographicalRegion(String geographicalRegion) {
+        this.geographicalRegion = geographicalRegion;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
 }

@@ -23,7 +23,7 @@ public interface DeadMenDAO {
 
     List<DeadMen> getbyDevReg(String devReg);
 
-    List<DeadMen> getByDistrict(String district);
+    DeadMen getByDistrict(String district);
 
     DeadMen getById(int id);
 

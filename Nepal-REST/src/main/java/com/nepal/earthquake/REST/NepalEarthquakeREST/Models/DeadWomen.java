@@ -22,7 +22,7 @@ public class DeadWomen {
     @Column(length = 50, name = "`zone`")
     private String zone;
 
-    @Column(length = 50, name = "`geographical_region")
+    @Column(length = 50, name = "`geographical_region`")
     private String geographicalRegion;
 
     @Column(name = "`number`")

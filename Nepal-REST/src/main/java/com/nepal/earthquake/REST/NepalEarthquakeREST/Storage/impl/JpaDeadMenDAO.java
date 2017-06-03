@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
+import javax.transaction.Transactional;
 import java.util.List;
 
 /**
@@ -19,17 +20,20 @@ public class JpaDeadMenDAO implements DeadMenDAO{
     @PersistenceContext
     private EntityManager entityManager;
 
+    @Transactional
     @Override
     public void delete(DeadMen deadMen) {
         entityManager.remove(deadMen);
     }
 
+    @Transactional
     @Override
     public DeadMen add(DeadMen deadMen) {
         entityManager.persist(deadMen);
         return deadMen;
     }
 
+    @Transactional
     @Override
     public DeadMen update(DeadMen deadMen) {
         entityManager.merge(deadMen);
@@ -62,18 +66,18 @@ public class JpaDeadMenDAO implements DeadMenDAO{
     }
 
     @Override
-    public List<DeadMen> getByDistrict(String district) {
+    public DeadMen getByDistrict(String district) {
         TypedQuery<DeadMen> query = entityManager.createQuery("select d from DeadMen d " +
                 "where district like :district", DeadMen.class)
                 .setParameter("district", district);
 
-        return query.getResultList();
+        return query.getSingleResult();
     }
 
     @Override
     public DeadMen getById(int id) {
         TypedQuery<DeadMen> query = entityManager.createQuery("select d from DeadMen d " +
-                "where ID = :id", DeadMen.class)
+                "where d.id = :id", DeadMen.class)
                 .setParameter("id", id);
 
         return query.getSingleResult();
