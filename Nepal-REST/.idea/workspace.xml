@@ -1060,7 +1060,7 @@
       <workItem from="1496471235073" duration="10780000" />
       <workItem from="1496506352754" duration="2810000" />
       <workItem from="1496842193524" duration="4741000" />
-      <workItem from="1496871601720" duration="896000" />
+      <workItem from="1496871601720" duration="1117000" />
     </task>
     <task id="LOCAL-00001" summary="- Slight modifications, getDonationsByFundation() controller doesn't work.">
       <created>1495466474065</created>
@@ -1181,11 +1181,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496872868473</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="LOTS of changes. never use query.getSingleResult().">
+      <created>1496873078527</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1496873078527</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114820000" />
+    <option name="totallyTimeSpent" value="115041000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
