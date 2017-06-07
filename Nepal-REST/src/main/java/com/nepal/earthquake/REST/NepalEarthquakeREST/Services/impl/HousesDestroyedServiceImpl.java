@@ -31,27 +31,28 @@ public class HousesDestroyedServiceImpl implements HousesDestroyedService {
 
     @Override
     public void removeByDistrict(String district) {
-        HousesDestroyed housesDestroyed = housesDestroyedDAO.getByDistrict(district);
-        housesDestroyedDAO.delete(housesDestroyed);
+        List<HousesDestroyed> housesDestroyed = housesDestroyedDAO.getByDistrict(district);
+        for(HousesDestroyed h : housesDestroyed)
+            housesDestroyedDAO.delete(h);
     }
 
     @Override
-    public HousesDestroyed updateNumberByDistrict(String district, int newNumber) {
-        HousesDestroyed housesDestroyed = housesDestroyedDAO.getByDistrict(district);
-        housesDestroyed.setNumber(newNumber);
+    public void updateNumberByDistrict(String district, int newNumber) {
+        List<HousesDestroyed> housesDestroyed = housesDestroyedDAO.getByDistrict(district);
+        for(HousesDestroyed h : housesDestroyed){
+            h.setNumber(newNumber);
 
-        housesDestroyedDAO.update(housesDestroyed);
+            housesDestroyedDAO.update(h);
+        }
 
-        return housesDestroyed;
     }
 
     @Override
-    public HousesDestroyed updateDistrictName(HousesDestroyed housesDestroyed, String district) {
+    public void updateDistrictName(HousesDestroyed housesDestroyed, String district) {
         housesDestroyed.setDistrict(district);
 
         housesDestroyedDAO.update(housesDestroyed);
 
-        return housesDestroyed;
     }
 
     @Override
@@ -65,12 +66,12 @@ public class HousesDestroyedServiceImpl implements HousesDestroyedService {
     }
 
     @Override
-    public HousesDestroyed getByDistrict(String district) {
+    public List<HousesDestroyed> getByDistrict(String district) {
         return housesDestroyedDAO.getByDistrict(district);
     }
 
     @Override
-    public HousesDestroyed getById(int id) {
+    public List<HousesDestroyed> getById(int id) {
         return null;
     }
 

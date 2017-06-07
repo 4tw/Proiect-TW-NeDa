@@ -20,7 +20,7 @@ public interface HousesDestroyedDAO {
 
     List<HousesDestroyed> getByDevReg(String devReg);
 
-    HousesDestroyed getByDistrict(String district);
+    List<HousesDestroyed> getByDistrict(String district);
 
     List<Object[]> getSimpleResultByZone(String zone);
 

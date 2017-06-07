@@ -33,34 +33,35 @@ public class DeadWomenServiceImpl implements DeadWomenService {
 
     @Override
     public void removeByDistrict(String district) {
-        DeadWomen deadWomen = deadWomenDAO.getByDistrict(district);
+        List<DeadWomen> deadWomen = deadWomenDAO.getByDistrict(district);
 
-        deadWomenDAO.delete(deadWomen);
-
-
+        for(DeadWomen d : deadWomen)
+            deadWomenDAO.delete(d);
 
     }
 
     @Override
-    public DeadWomen updateNumberByDistrict(String district, int newNumber) {
-        DeadWomen deadWomen = deadWomenDAO.getByDistrict(district);
+    public void updateNumberByDistrict(String district, int newNumber) {
+        List<DeadWomen> deadWomen = deadWomenDAO.getByDistrict(district);
 
-        deadWomen.setNumber(newNumber);
+        for(DeadWomen d : deadWomen){
+            d.setNumber(newNumber);
 
-        deadWomenDAO.update(deadWomen);
+            deadWomenDAO.update(d);
+        }
 
-        return deadWomen;
     }
 
     @Override
-    public DeadWomen updateDistrictName(String oldDistrictName, String newDistrictName) {
-        DeadWomen deadWomen = deadWomenDAO.getByDistrict(oldDistrictName);
+    public void updateDistrictName(String oldDistrictName, String newDistrictName) {
+        List<DeadWomen> deadWomen = deadWomenDAO.getByDistrict(oldDistrictName);
 
-        deadWomen.setDistrict(newDistrictName);
 
-        deadWomenDAO.update(deadWomen);
+        for( DeadWomen d : deadWomen){
+            d.setDistrict(newDistrictName);
 
-        return deadWomen;
+            deadWomenDAO.update(d);
+        }
     }
 
     @Override
@@ -74,12 +75,12 @@ public class DeadWomenServiceImpl implements DeadWomenService {
     }
 
     @Override
-    public DeadWomen getByDistrict(String district) {
+    public List<DeadWomen> getByDistrict(String district) {
         return deadWomenDAO.getByDistrict(district);
     }
 
     @Override
-    public DeadWomen getById(int id) {
+    public List<DeadWomen> getById(int id) {
         return deadWomenDAO.getById(id);
     }
 

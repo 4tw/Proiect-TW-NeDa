@@ -4,11 +4,9 @@ import com.nepal.earthquake.REST.NepalEarthquakeREST.Models.DeathsAndInjured;
 import com.nepal.earthquake.REST.NepalEarthquakeREST.Services.DeathsAndInjuredService;
 import com.nepal.earthquake.REST.NepalEarthquakeREST.Storage.DeathsInjuredDAO;
 import jdk.nashorn.internal.ir.RuntimeNode;
+import org.hibernate.annotations.Cache;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
@@ -18,6 +16,7 @@ import java.util.Map;
 /**
  * Created by Robert on 5/14/2017.
  */
+@CrossOrigin
 @RestController
 @RequestMapping("/deaths-injured")
 public class DeathsInjuredController {

@@ -66,21 +66,21 @@ public class JpaDeadMenDAO implements DeadMenDAO{
     }
 
     @Override
-    public DeadMen getByDistrict(String district) {
+    public List<DeadMen> getByDistrict(String district) {
         TypedQuery<DeadMen> query = entityManager.createQuery("select d from DeadMen d " +
                 "where district like :district", DeadMen.class)
                 .setParameter("district", district);
 
-        return query.getSingleResult();
+        return query.getResultList();
     }
 
     @Override
-    public DeadMen getById(int id) {
+    public List<DeadMen> getById(int id) {
         TypedQuery<DeadMen> query = entityManager.createQuery("select d from DeadMen d " +
                 "where d.id = :id", DeadMen.class)
                 .setParameter("id", id);
 
-        return query.getSingleResult();
+        return query.getResultList();
     }
 
     @Override

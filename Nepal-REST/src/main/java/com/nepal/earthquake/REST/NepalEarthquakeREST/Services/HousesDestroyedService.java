@@ -15,17 +15,17 @@ public interface HousesDestroyedService {
 
     void removeByDistrict(String district);
 
-    HousesDestroyed updateNumberByDistrict(String district, int newNumber);
+    void updateNumberByDistrict(String district, int newNumber);
 
-    HousesDestroyed updateDistrictName(HousesDestroyed housesDestroyed, String district);
+    void updateDistrictName(HousesDestroyed housesDestroyed, String district);
 
     List<HousesDestroyed> getByGeoRegion(String geoRegion);
 
     List<HousesDestroyed> getbyDevReg(String devReg);
 
-    HousesDestroyed getByDistrict(String district);
+    List<HousesDestroyed> getByDistrict(String district);
 
-    HousesDestroyed getById(int id);
+    List<HousesDestroyed> getById(int id);
 
     List<Object[]> getSimpleResultByZone(String zone);
 }

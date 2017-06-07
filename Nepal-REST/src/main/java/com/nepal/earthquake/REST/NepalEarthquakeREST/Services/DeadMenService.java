@@ -15,17 +15,17 @@ public interface DeadMenService {
 
     void removeByDistrict(String district);
 
-    DeadMen updateNumberByDistrict(String district, int newNumber);
+    void updateNumberByDistrict(String district, int newNumber);
 
-    DeadMen updateDistrictName(DeadMen deadMen, String district);
+    void updateDistrictName(DeadMen deadMen, String district);
 
     List<DeadMen> getByGeoRegion(String geoRegion);
 
     List<DeadMen> getbyDevReg(String devReg);
 
-    DeadMen getByDistrict(String district);
+    List<DeadMen> getByDistrict(String district);
 
-    DeadMen getById(int id);
+    List<DeadMen> getById(int id);
 
     List<Object[]> getSimpleResultByDevRegn(String devReg);
 

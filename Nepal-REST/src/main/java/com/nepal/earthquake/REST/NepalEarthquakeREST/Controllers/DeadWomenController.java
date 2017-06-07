@@ -11,6 +11,8 @@ import java.util.List;
 /**
  * Created by Robert on 5/30/2017.
  */
+
+@CrossOrigin
 @RestController
 @RequestMapping("/deadWomen")
 public class DeadWomenController {
@@ -37,13 +39,15 @@ public class DeadWomenController {
     }
 
     @RequestMapping(value = "/number/{district}/{newNumber}", method = RequestMethod.POST)
-    public DeadWomen updateNumberByDistrict(@PathVariable("district") String district,@PathVariable("newNumber") int newNumber){
-        return deadWomenService.updateNumberByDistrict(district, newNumber);
+    public List<DeadWomen> updateNumberByDistrict(@PathVariable("district") String district,@PathVariable("newNumber") int newNumber){
+        deadWomenService.updateNumberByDistrict(district, newNumber);
+        return deadWomenService.getByDistrict(district);
     }
 
     @RequestMapping(value = "/district/{oldDistrictName}/{newDistrictName}", method = RequestMethod.POST)
-    public DeadWomen updateDistrictName(@PathVariable("oldDistrictName") String oldDistrictName,@PathVariable("newDistrictName") String newDistrictName){
-        return deadWomenService.updateDistrictName(oldDistrictName, newDistrictName);
+    public List<DeadWomen> updateDistrictName(@PathVariable("oldDistrictName") String oldDistrictName,@PathVariable("newDistrictName") String newDistrictName){
+        deadWomenService.updateDistrictName(oldDistrictName, newDistrictName);
+        return deadWomenService.getByDistrict(newDistrictName);
 
     }
 
@@ -58,12 +62,12 @@ public class DeadWomenController {
     }
 
     @RequestMapping(value = "/district/{district}", method = RequestMethod.GET)
-    public DeadWomen getByDistrict(String district){
+    public List<DeadWomen> getByDistrict(String district){
         return deadWomenService.getByDistrict(district);
     }
 
     @RequestMapping(value = "/id/{id}", method = RequestMethod.GET)
-    public DeadWomen getById(int id){
+    public List<DeadWomen> getById(int id){
         return deadWomenService.getById(id);
     }
 

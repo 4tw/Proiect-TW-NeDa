@@ -30,26 +30,30 @@ public class DeadMenServiceImpl implements DeadMenService {
 
     @Override
     public void removeByDistrict(String district) {
-        DeadMen deadMen = deadMenDAO.getByDistrict(district);
-        deadMenDAO.delete(deadMen);
+        List<DeadMen> deadMen = deadMenDAO.getByDistrict(district);
+
+        for(DeadMen d : deadMen)
+            deadMenDAO.delete(d);
     }
 
     @Override
-    public DeadMen updateNumberByDistrict(String district, int newNumber) {
-        DeadMen updatedRecord = deadMenDAO.getByDistrict(district);
-        updatedRecord.setNumber(newNumber);
+    public void updateNumberByDistrict(String district, int newNumber) {
+        List<DeadMen> updatedRecord = deadMenDAO.getByDistrict(district);
 
-        deadMenDAO.update(updatedRecord);
-        return updatedRecord;
+        for(DeadMen d : updatedRecord){
+            d.setNumber(newNumber);
+
+            deadMenDAO.update(d);
+        }
+
     }
 
     @Override
-    public DeadMen updateDistrictName(DeadMen deadMen, String district) {
+    public void updateDistrictName(DeadMen deadMen, String district) {
         DeadMen updatedRecord = deadMen;
         updatedRecord.setDistrict(district);
 
         deadMenDAO.update(updatedRecord);
-        return updatedRecord;
     }
 
     @Override
@@ -63,12 +67,12 @@ public class DeadMenServiceImpl implements DeadMenService {
     }
 
     @Override
-    public DeadMen getByDistrict(String district) {
+    public List<DeadMen> getByDistrict(String district) {
         return deadMenDAO.getByDistrict(district);
     }
 
     @Override
-    public DeadMen getById(int id) {
+    public List<DeadMen> getById(int id) {
         return deadMenDAO.getById(id);
     }
 

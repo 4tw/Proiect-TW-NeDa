@@ -23,9 +23,9 @@ public interface DeadMenDAO {
 
     List<DeadMen> getbyDevReg(String devReg);
 
-    DeadMen getByDistrict(String district);
+    List<DeadMen> getByDistrict(String district);
 
-    DeadMen getById(int id);
+    List<DeadMen> getById(int id);
 
     List<Object[]> getSimpleResultByDevRegn(String devReg);
 

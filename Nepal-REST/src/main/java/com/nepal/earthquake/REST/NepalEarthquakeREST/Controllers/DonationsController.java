@@ -11,6 +11,8 @@ import java.util.List;
 /**
  * Created by Robert on 5/20/2017.
  */
+
+@CrossOrigin
 @RestController
 @RequestMapping("/donations")
 public class DonationsController {

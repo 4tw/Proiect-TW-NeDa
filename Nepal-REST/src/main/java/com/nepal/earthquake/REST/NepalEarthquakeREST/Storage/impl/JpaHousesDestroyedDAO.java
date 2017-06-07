@@ -69,13 +69,13 @@ public class JpaHousesDestroyedDAO implements HousesDestroyedDAO {
     }
 
     @Override
-    public HousesDestroyed getByDistrict(String district) {
+    public List<HousesDestroyed> getByDistrict(String district) {
         TypedQuery<HousesDestroyed> query = entityManager.createQuery("SELECT h from HousesDestroyed h " +
                         "where district like :district",
                 HousesDestroyed.class)
                 .setParameter("district", district);
 
-        return query.getSingleResult();
+        return query.getResultList();
     }
 
     @Override

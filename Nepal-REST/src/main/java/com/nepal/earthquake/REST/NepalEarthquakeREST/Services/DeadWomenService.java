@@ -15,17 +15,17 @@ public interface DeadWomenService {
 
     void removeByDistrict(String district);
 
-    DeadWomen updateNumberByDistrict(String district, int newNumber);
+    void updateNumberByDistrict(String district, int newNumber);
 
-    DeadWomen updateDistrictName(String oldDistrictName, String newDistrictName);
+    void updateDistrictName(String oldDistrictName, String newDistrictName);
 
     List<DeadWomen> getByGeoRegion(String geoRegion);
 
     List<DeadWomen> getbyDevReg(String devReg);
 
-    DeadWomen getByDistrict(String district);
+    List<DeadWomen> getByDistrict(String district);
 
-    DeadWomen getById(int id);
+    List<DeadWomen> getById(int id);
 
     List<Object[]> getSimpleResultByDevRegn(String devReg);
 }
