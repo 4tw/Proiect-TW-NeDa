@@ -245,6 +245,11 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="robertbutacu &lt;robert.butacu@yahoo.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GradleLocalSettings">
@@ -1060,7 +1065,7 @@
       <workItem from="1496471235073" duration="10780000" />
       <workItem from="1496506352754" duration="2810000" />
       <workItem from="1496842193524" duration="4741000" />
-      <workItem from="1496871601720" duration="1117000" />
+      <workItem from="1496871601720" duration="1243000" />
     </task>
     <task id="LOCAL-00001" summary="- Slight modifications, getDonationsByFundation() controller doesn't work.">
       <created>1495466474065</created>
@@ -1188,11 +1193,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496873078527</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="LOTS of changes. never use query.getSingleResult().">
+      <created>1496873355847</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1496873355847</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115041000" />
+    <option name="totallyTimeSpent" value="115167000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
