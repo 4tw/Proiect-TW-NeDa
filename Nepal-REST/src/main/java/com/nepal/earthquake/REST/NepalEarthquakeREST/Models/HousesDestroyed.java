@@ -30,14 +30,14 @@ public class HousesDestroyed {
     @Column(nullable = true, name = "`latitude`")
     private Float latitude;
 
-    @Column(name  = "`longitude`")
+    @Column(nullable = true, name  = "`longitude`")
     private Float longitude;
 
     public Float getLatitude() {
         return latitude;
     }
 
-    public void setLatitude(float latitude) {
+    public void setLatitude(Float latitude) {
         this.latitude = latitude;
     }
 
@@ -45,7 +45,7 @@ public class HousesDestroyed {
         return longitude;
     }
 
-    public void setLongitude(float longitude) {
+    public void setLongitude(Float longitude) {
         this.longitude = longitude;
     }
 

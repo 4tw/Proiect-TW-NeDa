@@ -55,7 +55,7 @@ public class HousesDestroyedController{
 
     }
 
-    @RequestMapping(value = "/coordinates/{district}/{latitude}/{longitude}", method = RequestMethod.POST)
+    @RequestMapping(value = "/coord/{district}/{latitude}/{longitude}/", method = RequestMethod.POST)
     public List<HousesDestroyed> updateCoordinatesByDistrict(@PathVariable("district") String district,
                                                              @PathVariable("latitude") Float latitude,
                                                              @PathVariable("longitude") Float longitude){
