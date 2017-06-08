@@ -29,4 +29,6 @@ public interface DeadMenDAO {
 
     List<Object[]> getSimpleResultByDevRegn(String devReg);
 
+    List<Object[]> getSimpleResultByZone(String zone);
+
 }

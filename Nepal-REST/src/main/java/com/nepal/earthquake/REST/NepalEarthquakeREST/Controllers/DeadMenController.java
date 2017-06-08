@@ -76,4 +76,9 @@ public class DeadMenController {
     public List<Object[]> getSimpleResultByDevRegn(@PathVariable("devReg") String devReg){
         return deadMenService.getSimpleResultByDevRegn(devReg);
     }
+
+    @RequestMapping(value = "/zone/{zone}", method = RequestMethod.GET)
+    public List<Object[]> getSimpleResultByZone(@PathVariable("zone") String zone){
+        return deadMenService.getSimpleResultByZone(zone);
+    }
 }

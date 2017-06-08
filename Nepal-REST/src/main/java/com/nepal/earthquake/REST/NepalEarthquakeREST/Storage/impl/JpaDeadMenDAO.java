@@ -92,4 +92,14 @@ public class JpaDeadMenDAO implements DeadMenDAO{
 
         return query.getResultList();
     }
+
+    @Override
+    public List<Object[]> getSimpleResultByZone(String zone) {
+        TypedQuery<Object[]> query = entityManager.createQuery("select distinct dm.district, ( 0 - dm.number), dw.number " +
+                "from DeadMen dm, DeadWomen dw where dm.district = dw.district and " +
+                "dm.zone like :zone", Object[].class)
+                .setParameter("zone", zone);
+
+        return query.getResultList();
+    }
 }

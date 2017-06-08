@@ -65,6 +65,7 @@ public class JpaDeadWomenDAO implements DeadWomenDAO {
         return query.getResultList();
     }
 
+
     @Override
     public List<DeadWomen> getByDistrict(String district) {
         TypedQuery<DeadWomen> query = entityManager.createQuery("select d from DeadWomen d where " +

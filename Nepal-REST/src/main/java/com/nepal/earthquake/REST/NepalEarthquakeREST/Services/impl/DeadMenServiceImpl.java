@@ -80,4 +80,9 @@ public class DeadMenServiceImpl implements DeadMenService {
     public List<Object[]> getSimpleResultByDevRegn(String devReg) {
         return deadMenDAO.getSimpleResultByDevRegn(devReg);
     }
+
+    @Override
+    public List<Object[]> getSimpleResultByZone(String zone) {
+        return deadMenDAO.getSimpleResultByZone(zone);
+    }
 }

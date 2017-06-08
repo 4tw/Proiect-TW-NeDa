@@ -29,4 +29,6 @@ public interface DeadMenService {
 
     List<Object[]> getSimpleResultByDevRegn(String devReg);
 
+    List<Object[]> getSimpleResultByZone(String zone);
+
 }
