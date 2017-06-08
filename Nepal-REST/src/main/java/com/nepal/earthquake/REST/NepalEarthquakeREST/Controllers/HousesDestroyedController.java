@@ -55,6 +55,15 @@ public class HousesDestroyedController{
 
     }
 
+    @RequestMapping(value = "/coordinates/{district}/{latitude}/{longitude}", method = RequestMethod.POST)
+    public List<HousesDestroyed> updateCoordinatesByDistrict(@PathVariable("district") String district,
+                                                             @PathVariable("latitude") Float latitude,
+                                                             @PathVariable("longitude") Float longitude){
+        return housesDestroyedService.updateCoordinatesByDistrict(district,
+                latitude,
+                longitude);
+    }
+
     @RequestMapping(value = "/geoReg/{geoReg}", method = RequestMethod.GET)
     public List<HousesDestroyed> getByGeoRegion(@PathVariable("geoReg") String geoRegion){
         return housesDestroyedService.getByGeoRegion(geoRegion);
@@ -80,4 +89,6 @@ public class HousesDestroyedController{
     public List<Object[]> getSimpleResultByZone(String zone){
         return housesDestroyedService.getSimpleResultByZone(zone);
     }
+
+
 }

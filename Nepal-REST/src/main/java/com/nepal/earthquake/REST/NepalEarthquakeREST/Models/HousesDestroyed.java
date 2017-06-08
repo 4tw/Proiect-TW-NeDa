@@ -24,8 +24,30 @@ public class HousesDestroyed {
     @Column(length = 50, name = "`geographical_region`")
     private String geographicalRegion;
 
-    @Column(name = "`number`")
+    @Column(nullable = true, name = "`number`")
     private int number;
+
+    @Column(nullable = true, name = "`latitude`")
+    private Float latitude;
+
+    @Column(name  = "`longitude`")
+    private Float longitude;
+
+    public Float getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(float latitude) {
+        this.latitude = latitude;
+    }
+
+    public Float getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(float longitude) {
+        this.longitude = longitude;
+    }
 
     public int getId() {
         return id;

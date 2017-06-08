@@ -19,6 +19,8 @@ public interface HousesDestroyedService {
 
     void updateDistrictName(HousesDestroyed housesDestroyed, String district);
 
+    List<HousesDestroyed> updateCoordinatesByDistrict(String district, Float latitude, Float longitude);
+
     List<HousesDestroyed> getByGeoRegion(String geoRegion);
 
     List<HousesDestroyed> getbyDevReg(String devReg);

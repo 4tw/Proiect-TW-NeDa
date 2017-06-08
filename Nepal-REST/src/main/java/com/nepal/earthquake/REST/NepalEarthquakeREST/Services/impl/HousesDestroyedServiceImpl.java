@@ -56,6 +56,20 @@ public class HousesDestroyedServiceImpl implements HousesDestroyedService {
     }
 
     @Override
+    public List<HousesDestroyed> updateCoordinatesByDistrict(String district, Float latitude, Float longitude) {
+        List<HousesDestroyed> entriesToBeUpdated = housesDestroyedDAO.getByDistrict(district);
+
+        for(HousesDestroyed h : entriesToBeUpdated){
+            h.setLatitude(latitude);
+            h.setLongitude(longitude);
+
+            housesDestroyedDAO.update(h);
+        }
+
+        return entriesToBeUpdated;
+    }
+
+    @Override
     public List<HousesDestroyed> getByGeoRegion(String geoRegion) {
         return housesDestroyedDAO.getByGeoRegion(geoRegion);
     }

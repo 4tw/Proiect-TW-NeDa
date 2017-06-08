@@ -72,8 +72,8 @@ public class DeadWomenController {
     }
 
     @RequestMapping(value = "/devReg/{devReg}", method = RequestMethod.GET)
-    List<Object[]> getSimpleResultByDevRegn(String devReg){
+    public List<Object[]> getSimpleResultByDevRegn(String devReg){
         return deadWomenService.getSimpleResultByDevRegn(devReg);
-
     }
+
 }
