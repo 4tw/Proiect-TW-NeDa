@@ -22,7 +22,7 @@ body {
   background-size: cover;
 }
 p{
-font:rgb(0,0,0);
+font: rgb(0,0,0);
 font-size:17px;
 font-family: "Times New Roman", Georgia, Serif;
 }
@@ -36,7 +36,6 @@ margin:0 auto;
 	  background:transparent ;
       max-width: 970px;
    }
-}
   </style>
   </head>
  <body>
@@ -119,8 +118,8 @@ margin:0 auto;
   </div>
   <br>
   <h1 style="font-family:verdana; color:blue; font-size: 150%">Some information about Nepal Earthquake of 2015:<br><br></h1>
-  <div class="panel panel-default">
-  <div class="panel-body" style="background:rgb(200,200,200);">
+  <div class="panel panel-default" style="background:rgba(0,0,0,0.8);">
+  <div class="panel-body" >
   <div class="row">
 		  <div class="col-sm-4 col">
 		  <p><strong>1.</strong>Nepal earthquake of 2015, also called Gorkha earthquake, severe earthquake 
