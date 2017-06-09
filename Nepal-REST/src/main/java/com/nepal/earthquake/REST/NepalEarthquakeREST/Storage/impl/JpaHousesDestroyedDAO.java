@@ -46,6 +46,15 @@ public class JpaHousesDestroyedDAO implements HousesDestroyedDAO {
     }
 
     @Override
+    public List<Object[]> getShortAll() {
+        TypedQuery<Object[]> query = entityManager.createQuery("SELECT h.latitude, h.longitude, h.number " +
+                        " from HousesDestroyed h ",
+                Object[].class);
+
+        return query.getResultList();
+    }
+
+    @Override
     public List<HousesDestroyed> getByGeoRegion(String geoReg) {
         geoReg = "%" + geoReg + "%";
 

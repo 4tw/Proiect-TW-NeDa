@@ -16,6 +16,8 @@ public interface HousesDestroyedDAO {
 
     List<HousesDestroyed> getAll();
 
+    List<Object[]> getShortAll();
+
     List<HousesDestroyed> getByGeoRegion(String geoReg);
 
     List<HousesDestroyed> getByDevReg(String devReg);

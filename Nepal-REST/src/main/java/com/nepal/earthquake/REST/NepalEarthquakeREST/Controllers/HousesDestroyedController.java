@@ -24,10 +24,6 @@ public class HousesDestroyedController{
     @Autowired
     private HousesDestroyedService housesDestroyedService;
 
-    @RequestMapping(value="", method = RequestMethod.GET)
-    public List<HousesDestroyed> getAll(){
-        return housesDestroyedService.getAll();
-    }
 
     @RequestMapping(value = "", method = RequestMethod.POST)
     public HousesDestroyed add(@RequestBody HousesDestroyed housesDestroyed){
@@ -62,6 +58,16 @@ public class HousesDestroyedController{
         return housesDestroyedService.updateCoordinatesByDistrict(district,
                 latitude,
                 longitude);
+    }
+
+    @RequestMapping(value="", method = RequestMethod.GET)
+    public List<HousesDestroyed> getAll(){
+        return housesDestroyedService.getAll();
+    }
+
+    @RequestMapping(value = "/short", method = RequestMethod.GET)
+    public List<Object[]> getLatLongNumber(){
+        return housesDestroyedDAO.getShortAll();
     }
 
     @RequestMapping(value = "/geoReg/{geoReg}", method = RequestMethod.GET)
