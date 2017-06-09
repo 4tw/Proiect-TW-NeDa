@@ -22,7 +22,6 @@ body {
   background-size: cover;
 }
 p{
-font:rgb(0,0,0);
 font-size:17px;
 font-family: "Times New Roman", Georgia, Serif;
 }
