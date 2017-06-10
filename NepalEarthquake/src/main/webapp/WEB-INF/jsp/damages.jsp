@@ -48,34 +48,10 @@
             </ul>
         </nav>
     </div>
-    <h1 style="font-family:verdana; color:blue; font-size: 150%">Information about damages:<br><br></h1>
+    <h1 style="font-family:verdana; background:rgba(255,255,255,0.5);padding:10px;color:black; font-size: 150%">Informations about damages:<br><br></h1>
         <div class="row">
             <div class="col-sm-6">
-                <div id="map" style="width:920px;height:500px;background:yellow"></div>
-
-            </div>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                <div class="col-sm-6">
-                    <div style="background:rgba(255,255,255,0.5);padding:10px;">
-
-                    <p align="center">Select the format you want to download the requested information.</p>
-                <br>
-                <form class="form-inline">
-                    <div class="form-group">
-                        <label for="sel3">Format:</label>
-                        <select class="form-control" id="sel3">
-                            <option>PNG</option>
-                            <option>SVG</option>
-                        </select>
-                        <br><br>
-
-                        <button type="button" class="btn btn-primary" id="btnJPG" style="float: right;">Save JPG</button>
-                        <button type="button" class="btn btn-primary" id="btnPNG" style="float: right;">Save PNG</button>
-                        <button type="button" class="btn btn-primary" id="btnSVG" style="float: right;">Save SVG</button>
-                    </div>
-
-                </form>
-            </div>
+                <div id="map" style="width:940px;height:500px;background:yellow"></div>
         </div>
     </div>
 </div>

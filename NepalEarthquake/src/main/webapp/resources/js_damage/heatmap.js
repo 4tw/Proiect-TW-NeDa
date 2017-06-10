@@ -4,8 +4,6 @@ function initMap() {
         center: new google.maps.LatLng(27.647084, 85.347761),
     };
 
-    
-
     var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
     var testing = new XMLHttpRequest();
@@ -32,9 +30,6 @@ function initMap() {
     });
     testing.open('GET', 'http://localhost:9999/housesDestroyed/short', true);
     testing.send();
-
-
-
 
 }
 function addScript( url, callback ) {
