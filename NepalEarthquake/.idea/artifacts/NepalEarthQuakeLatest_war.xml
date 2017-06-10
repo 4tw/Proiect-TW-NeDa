@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="NepalEarthQuakeLatest:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="NepalEarthQuakeLatest.war">
+      <element id="artifact" artifact-name="NepalEarthQuakeLatest:war exploded" />
+    </root>
+  </artifact>
+</component>

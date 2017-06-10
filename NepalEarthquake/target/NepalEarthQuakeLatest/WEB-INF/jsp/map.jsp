@@ -22,6 +22,7 @@ body {
   background-size: cover;
 }
 p{
+font:rgb(0,0,0);
 font-size:17px;
 font-family: "Times New Roman", Georgia, Serif;
 }
@@ -36,6 +37,7 @@ margin:0 auto;
       max-width: 970px;
 	  height:60%;
    }
+}
   </style>
 </head>
 <body>
