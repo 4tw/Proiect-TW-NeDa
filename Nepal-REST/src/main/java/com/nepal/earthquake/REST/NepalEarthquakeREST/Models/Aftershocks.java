@@ -24,7 +24,7 @@ public class Aftershocks {
     private String hour;
 
     @Column(name = "`Severity`")
-    private int severity;
+    private Float severity;
 
     public int getID() {
         return ID;
@@ -58,11 +58,11 @@ public class Aftershocks {
         this.hour = hour;
     }
 
-    public int getSeverity() {
+    public Float getSeverity() {
         return severity;
     }
 
-    public void setSeverity(int severity) {
+    public void setSeverity(Float severity) {
         this.severity = severity;
     }
 

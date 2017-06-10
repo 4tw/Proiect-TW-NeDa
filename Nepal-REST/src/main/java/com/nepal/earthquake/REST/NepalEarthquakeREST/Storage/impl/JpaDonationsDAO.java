@@ -40,10 +40,12 @@ public class JpaDonationsDAO implements DonationsDAO {
         return query.getResultList();
     }
 
-    //TODO return object[], not donations
     @Override
     public List<Object[]> getDonationsSumByFundation() {
-        Query query = entityManager.createQuery("SELECT donationType, sum(netDonation) FROM Donations group by donationType", Object[].class);
+        Query query = entityManager.createQuery("SELECT donationType, sum(netDonation) FROM Donations group by donationType " +
+                "order by 2 desc", Object[].class);
+
+        query.setMaxResults(6);
         return query.getResultList();
     }
 
