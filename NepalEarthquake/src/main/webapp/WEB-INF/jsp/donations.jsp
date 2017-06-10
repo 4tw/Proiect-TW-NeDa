@@ -5,12 +5,16 @@
     <meta name="viewport" content="width = device-width,initial-scale = 1">
     <title>Nepal Earthquake-E.propagation </title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="/resources/js/FileSaver.js" type="text/javascript"></script>
+    <script src="/resources/js/canvas-toBlob.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
     <script src="/resources/js/pie.js" type="text/javascript"></script>
     <link rel="stylesheet" href="/resources/css/donations.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <script src="https://rawgit.com/niklasvh/html2canvas/master/dist/html2canvas.min.js"></script>
+
+
 </head>
 <body>
 <div class="container-fluid">
@@ -53,11 +57,23 @@
     <div style="background:rgba(255,255,255,0.5);padding:10px;">
         <div class="row">
             <div class="col-sm-8 col-md-8">
-                <div class="chart-container">
+                <div id="chart" class="chart-container">
                     <canvas id="myChart"></canvas>
                 </div>
             </div>
             <div class="col-sm-4">
+                <br><br>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="sel2">Chart Type:</label>
+                        <select class="form-control" id="sel2" onchange="getSelectValue();">
+                            <option value="pie" selected="selected">Pie Chart</option>
+                            <option value="horizontalBar">Bar Chart</option>
+                        </select>
+                        <br><br>
+                    </div>
+                </form>
+                <br><br>
                 <p>Select the format you want to download the requested information.</p>
                 <br>
                 <form class="form-inline">
@@ -68,7 +84,9 @@
                             <option>SVG</option>
                         </select>
                         <br><br>
-                        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span> Download</button>
+
+                        <button id="saveButton" type="button" class="btn btn-primary" onclick="saveFunction()">Download</button>
+
                     </div>
                 </form>
             </div>

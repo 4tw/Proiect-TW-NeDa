@@ -1,16 +1,18 @@
 /**
  * Created by Sony on 10-Jun-17.
  */
+var myChart;
+var myChartConfig;
+var ctx;
+var charType='pie';
 window.onload = function() {
-    var ctx = document.getElementById("myChart").getContext('2d');
-
+    ctx = document.getElementById("myChart").getContext('2d');
     var url = 'http://localhost:9999/donations/sumByFundation';
     var xhttp = new XMLHttpRequest();
     xhttp.addEventListener("load", function () {
         var ourData = JSON.parse(xhttp.responseText);
-
-        var myChart2 = new Chart(ctx, {
-            type: 'pie',
+        myChartConfig = {
+            type: charType,
             data: {
                 labels: ourData.map(mapFundations),
                 datasets: [{
@@ -53,15 +55,52 @@ window.onload = function() {
                 }
             }
 
-        });
+        }
+        myChart = new Chart(ctx, myChartConfig);
     });
     xhttp.open("GET", url, true);
     xhttp.send();
 }
+
+console.log(charType);
 function mapFundations(data){
     return data[0]
 }
 
 function mapDonation(data){
     return Math.round(data[1])
+}
+
+function getSelectValue()
+{
+    var selectedValue=document.getElementById("sel2").value;
+    //console.log(selectedValue);
+    charType = selectedValue;
+    console.log(charType);
+    if (charType == 'pie' ) location.reload(false);
+        else updateChart();
+
+}
+
+function updateChart(){
+   // myChart2.type=charType;
+   // myChart2.data.datasets[0].data[7]="5000";
+    //myChart2.data.labels[7]="Fanta";
+    //myChart2.update();
+    myChart.destroy();
+
+    /*document.getElementById("chart-container").innerHTML = '&nbsp;';
+    document.getElementById("chart-container").innerHTML = '<canvas id="myChart"></canvas>';*/
+    ctx = document.getElementById("myChart").getContext('2d');
+    myChartConfig.type=charType;
+    myChart = new Chart(ctx, myChartConfig);
+}
+
+
+
+function saveFunction(){
+    alert('merge')
+    $("#myChart").get(0).toBlob(function(blob) {
+        saveAs(blob, "chart_1.png");
+    });
 }

@@ -22,5 +22,6 @@
     <orderEntry type="library" name="lib" level="project" />
     <orderEntry type="library" name="jquery-DefinitelyTyped" level="application" />
     <orderEntry type="library" name="pie.js" level="application" />
+    <orderEntry type="library" name="FileSaver" level="application" />
   </component>
 </module>
