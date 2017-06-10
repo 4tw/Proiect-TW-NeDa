@@ -21,7 +21,7 @@ function initMap() {
              {location: new google.maps.LatLng(27.8767, 85.1428), weight:2000}, //Nuwakot
              {location: new google.maps.LatLng(27.9554, 84.8745), weight:2000}, //Dhading
 
-        ];
+        ]; */
 
         var heatmap;
         heatmap = new google.maps.visualization.HeatmapLayer({
