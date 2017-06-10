@@ -1,4 +1,4 @@
-1. Dezvoltarea front-end-ului ( html + css)
+1. Dezvoltarea front-end ului ( html + css)
 2. Crearea proiectului Java Spring + Setup ( baza de date Hibernate etc)
 3. Integrarea front-end-ului in cadrul proiectului Java Spring.
 4. Popularea bazei de date cu ajutorul unui API REST.
