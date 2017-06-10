@@ -8,6 +8,7 @@ import org.hibernate.annotations.Cache;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+
 import java.util.List;
 import java.util.Map;
 
@@ -51,6 +52,14 @@ public class DeathsInjuredController {
 
     @RequestMapping(value = "/last10Injuries", method = RequestMethod.GET)
     public List<DeathsAndInjured> getLast3Injuries(@RequestParam(required = false)Map<String,String> q){
+        return casualtyService.getLast10NumberOfInjuries();
+    }
+
+    @RequestMapping(value = "/last10Injuries/xml", method = RequestMethod.GET)
+    public List<DeathsAndInjured> getLast3InjuriesXml(@RequestParam(required = false)Map<String,String> q){
+        /*JSONReader json = new JSONObject(str);
+        String xml = XML.toString(json);
+        */
         return casualtyService.getLast10NumberOfInjuries();
     }
 
