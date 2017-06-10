@@ -50,7 +50,7 @@ public class JpaDonationsDAO implements DonationsDAO {
     @Override
     public List<Object[]> getDonationsByFundation(String fundation, int limit) {
         fundation = "%" + fundation + "%";
-        TypedQuery<Object[]> query = entityManager.createQuery("select d.donationType, d.donor, d.netDonation " +
+        TypedQuery<Object[]> query = entityManager.createQuery("select d.donor, d.netDonation " +
                 "  from Donations d where Donation_Type like :fundation " +
                 "order by Net_donation desc", Object[].class)
                 .setParameter("fundation", fundation);
