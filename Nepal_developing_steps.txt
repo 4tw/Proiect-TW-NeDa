@@ -5,4 +5,4 @@
 5. Dezvoltarea scripturilor de reprezentare a datelor.
 6. Integrarea scripturilor in cadrul aplicatiei , pe paginile independente si a butoanelor de download/format.
 7. Crearea si integrarea scriptului pentru pagina in care se vor cupla.
-8. Implementarea API-ului REST.
+8. Implementarea API-ului REST!!
