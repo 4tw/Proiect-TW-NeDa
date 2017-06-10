@@ -62,7 +62,6 @@ window.onload = function() {
     xhttp.send();
 }
 
-console.log(charType);
 function mapFundations(data){
     return data[0]
 }
@@ -74,33 +73,23 @@ function mapDonation(data){
 function getSelectValue()
 {
     var selectedValue=document.getElementById("sel2").value;
-    //console.log(selectedValue);
     charType = selectedValue;
     console.log(charType);
     if (charType == 'pie' ) location.reload(false);
         else updateChart();
-
 }
 
 function updateChart(){
-   // myChart2.type=charType;
-   // myChart2.data.datasets[0].data[7]="5000";
-    //myChart2.data.labels[7]="Fanta";
-    //myChart2.update();
     myChart.destroy();
-
-    /*document.getElementById("chart-container").innerHTML = '&nbsp;';
-    document.getElementById("chart-container").innerHTML = '<canvas id="myChart"></canvas>';*/
     ctx = document.getElementById("myChart").getContext('2d');
     myChartConfig.type=charType;
     myChart = new Chart(ctx, myChartConfig);
 }
 
-
-
 function saveFunction(){
-    alert('merge')
+    var selected=$('#sel3 :selected').val();
+    var dType = "chart."+ selected;
     $("#myChart").get(0).toBlob(function(blob) {
-        saveAs(blob, "chart_1.png");
+        saveAs(blob, dType);
     });
 }

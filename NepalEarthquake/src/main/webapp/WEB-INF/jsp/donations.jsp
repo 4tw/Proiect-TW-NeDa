@@ -78,10 +78,11 @@
                 <br>
                 <form class="form-inline">
                     <div class="form-group">
-                        <label for="sel3">Format:</label>
-                        <select class="form-control" id="sel3">
-                            <option>PNG</option>
-                            <option>SVG</option>
+                        <label for="sel3">Save chart as:</label>
+                        <select id="sel3" class="form-control">
+                            <option value="png" selected="selected">PNG</option>
+                            <option value="jpg">JPG</option>
+                            <option value="svg">SVG</option>
                         </select>
                         <br><br>
 
