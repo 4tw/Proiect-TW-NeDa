@@ -52,6 +52,7 @@
         <div class="row">
             <div class="col-sm-6">
                 <div id="map" style="width:920px;height:500px;background:yellow"></div>
+
             </div>
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <div class="col-sm-6">
@@ -67,11 +68,10 @@
                             <option>SVG</option>
                         </select>
                         <br><br>
+
                         <button type="button" class="btn btn-primary" id="btnJPG" style="float: right;">Save JPG</button>
                         <button type="button" class="btn btn-primary" id="btnPNG" style="float: right;">Save PNG</button>
                         <button type="button" class="btn btn-primary" id="btnSVG" style="float: right;">Save SVG</button>
-                        <a id="export-png" class="btn btn-default"><i class="fa fa-download"></i> Download PNG</a>
-
                     </div>
 
                 </form>
