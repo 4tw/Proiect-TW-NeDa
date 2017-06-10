@@ -34,7 +34,7 @@ public class MainController {
     @RequestMapping(path = "/map",method = RequestMethod.GET )
     public String Map(){return "map";}
 
-    @RequestMapping(path = "/earthquake-propagation",method = RequestMethod.GET )
-    public String EarthquakePropagation(){return "earthquake-propagation";}
+    @RequestMapping(path = "/donations",method = RequestMethod.GET )
+    public String EarthquakePropagation(){return "donations";}
 
 }

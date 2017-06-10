@@ -1,0 +1,67 @@
+/**
+ * Created by Sony on 10-Jun-17.
+ */
+window.onload = function() {
+    var ctx = document.getElementById("myChart").getContext('2d');
+
+    var url = 'http://localhost:9999/donations/sumByFundation';
+    var xhttp = new XMLHttpRequest();
+    xhttp.addEventListener("load", function () {
+        var ourData = JSON.parse(xhttp.responseText);
+
+        var myChart2 = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ourData.map(mapFundations),
+                datasets: [{
+                    label: 'Amount of $',
+                    data: ourData.map(mapDonation),
+                    backgroundColor: [
+                        "#2d5fdb",
+                        "#a6273f",
+                        "#5db64d",
+                        "#f1c40f",
+                        "#e75628",
+                        "#15dbdc",
+                        "#dc3b3a",
+                        "#dc35a5",
+                        "#864ddc",
+                        "#5e70dc",
+                        "#025e39",
+                        "#d3373a",
+                        "#dc0a00"
+                    ],
+
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                cutoutPercentage: 20,
+                title: {
+                    display: true,
+                    position: "top",
+                    text: "Donations(amount of $)",
+                    fontSize: 20,
+                    fontStyle: "bold"
+                },
+                legend: {
+                    display: true,
+                    position: 'top',
+                    labels: {
+                        fontColor: 'rgb(255, 99, 132)'
+                    }
+                }
+            }
+
+        });
+    });
+    xhttp.open("GET", url, true);
+    xhttp.send();
+}
+function mapFundations(data){
+    return data[0]
+}
+
+function mapDonation(data){
+    return Math.round(data[1])
+}
