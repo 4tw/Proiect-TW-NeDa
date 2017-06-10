@@ -26,6 +26,10 @@ font:rgb(0,0,0);
 font-size:17px;
 font-family: "Times New Roman", Georgia, Serif;
 }
+  #map {
+	  height: 100%;
+  }
+
 
 div{
 background:transparent;
@@ -39,6 +43,7 @@ margin:0 auto;
    }
 }
   </style>
+	<script src="/resources/js/aftershocks.js"></script>
 </head>
 <body>
 <div class="container-fluid">
@@ -80,47 +85,12 @@ margin:0 auto;
 	  <h1 style="font-family:verdana; color:blue; font-size: 150%">Information about Earthquake response:<br><br></h1>
   <div style="background:rgb(200,200,200);padding:10px;">
   <br><br>
-		    <form class="form-inline">
-				<div class="form-group">
-				  <label for="sel1">Localitate:</label>
-				  <select class="form-control" id="sel1">
-					<option>Sagarmatha</option>
-					<option>Lumbini</option>
-					<option>Seti</option>
-					<option>Bheri</option>
-				  </select>
-						<label for="sel1">Format:</label>
-				  <select class="form-control" id="sel2">
-					<option>Harta</option>
-					<option>ColumnChart</option>
-					<option>LineChart</option>
-					<option>Histograma</option>
-				  </select>
-				   <button type="submit" class="btn btn-default">Submit</button>
-				</div>
-            </form>
-	 <br><br>
-	  <div class="row">
-		  <div class="col-sm-6">
-		     <img class="hidden-xs" src="/resources/img/3.jpg" alt="Nepal" width="460" height="345">
-	  </div>
-		  <div class="col-sm-6">
-		  <p>Select the format you want to download the requested information.</p>
-		  <br>
-		   <form class="form-inline">
-				<div class="form-group">
-				  <label for="sel1">Format:</label>
-				  <select class="form-control" id="sel3">
-					<option>PNG</option>
-					<option>SVG</option>
-				  </select>
-				  <br><br>
-				   <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span> Download</button>
-				</div>
-            </form>
-		   </div>
-	 </div>	
-</div>
+	  <button id="start">Start</button>
+	  <div id="googleMap" style="width:100%;height:400px;"></div>
+
+	  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFc7pJusrQeKWR-7FpNZUQEa4GUDadyi8&callback=myMap"></script>
+
+  </div>
 </div>
 </body>
 </html>
