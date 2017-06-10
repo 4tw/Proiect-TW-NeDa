@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="/resources/js_damage/heatmap.js" type="text/javascript"> </script>
+
 </head>
 <body>
 <div class="container-fluid">
@@ -48,14 +49,15 @@
         </nav>
     </div>
     <h1 style="font-family:verdana; color:blue; font-size: 150%">Information about damages:<br><br></h1>
-    <div style="background:rgb(200,200,200);padding:10px;">
         <div class="row">
             <div class="col-sm-6">
                 <div id="map" style="width:920px;height:500px;background:yellow"></div>
             </div>
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <div class="col-sm-6">
-                <p>Select the format you want to download the requested information.</p>
+                <div class="col-sm-6">
+                    <div style="background:rgba(255,255,255,0.5);padding:10px;">
+
+                    <p align="center">Select the format you want to download the requested information.</p>
                 <br>
                 <form class="form-inline">
                     <div class="form-group">
@@ -65,8 +67,13 @@
                             <option>SVG</option>
                         </select>
                         <br><br>
-                        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span> Download</button>
+                        <button type="button" class="btn btn-primary" id="btnJPG" style="float: right;">Save JPG</button>
+                        <button type="button" class="btn btn-primary" id="btnPNG" style="float: right;">Save PNG</button>
+                        <button type="button" class="btn btn-primary" id="btnSVG" style="float: right;">Save SVG</button>
+                        <a id="export-png" class="btn btn-default"><i class="fa fa-download"></i> Download PNG</a>
+
                     </div>
+
                 </form>
             </div>
         </div>

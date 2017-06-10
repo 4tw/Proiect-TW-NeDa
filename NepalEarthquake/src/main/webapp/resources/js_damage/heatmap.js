@@ -6,6 +6,7 @@ function initMap() {
 
     var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
+
     var testing = new XMLHttpRequest();
 
     function returnResults(line){
@@ -15,20 +16,16 @@ function initMap() {
         var ourData = JSON.parse(testing.responseText);
         var myHeatMap = ourData.map(returnResults);
         console.log(myHeatMap);
-        var heatMapData = [
-            /* {location: new google.maps.LatLng(ourData[1][0], ourData[1][1]),weight: ourData[1][2]}, //Kathmandu
-             {location: new google.maps.LatLng(27.9297, 85.7128), weight:2000}, //Sindhupalchok
-             {location: new google.maps.LatLng(27.8767, 85.1428), weight:2000}, //Nuwakot
-             {location: new google.maps.LatLng(27.9554, 84.8745), weight:2000}, //Dhading
-
-        ]; */
 
         var heatmap;
         heatmap = new google.maps.visualization.HeatmapLayer({
             data: myHeatMap,
-            radius: 60,
-            opacity: 0.8
+            radius: 50,
+            opacity: 0.5,
+            maxIntensity: 10000
+
         });
+
 
         heatmap.setMap(map);
     });
@@ -48,4 +45,9 @@ function loadMapsAPI() {
 }
 
 window.onload = loadMapsAPI;
+
+
+
+
+
 
