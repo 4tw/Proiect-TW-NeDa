@@ -20,7 +20,7 @@ function initMap() {
         var heatmap;
         heatmap = new google.maps.visualization.HeatmapLayer({
             data: myHeatMap,
-            radius: 50,
+            radius: 40,
             opacity: 0.5,
             maxIntensity: 10000
         });

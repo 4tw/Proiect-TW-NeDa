@@ -48,10 +48,12 @@
             </ul>
         </nav>
     </div>
-    <h1 style="font-family:verdana; background:rgba(255,255,255,0.5);padding:10px;color:black; font-size: 150%">Informations about damages:<br><br></h1>
+    <h1 style="font-family:verdana; background:rgba(255,255,255,0.5);padding:10px;color:black; font-size: 150%">A heatmap that shows the most affected areas by the 2015's earthquake:<br><br></h1>
         <div class="row">
             <div class="col-sm-6">
                 <div id="map" style="width:940px;height:500px;background:yellow"></div>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </div>
     </div>
 </div>
