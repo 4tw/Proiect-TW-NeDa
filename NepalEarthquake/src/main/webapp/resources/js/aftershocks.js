@@ -2,6 +2,9 @@
  * Created by Robert-PC on 6/10/2017.
  */
 window.onload = pageLoad;
+var strings = [ "asd", "asdas", "asdasd", "asdasd", "asd"];
+var i = 0;
+
 
 function pageLoad() {
     var startButton = document.getElementById("start");
@@ -10,9 +13,14 @@ function pageLoad() {
 }
 
 function alertMe() {
-    setInterval(function(){
-        alert("hi");
-    },200);
+    var testingInterval = setInterval(function(){
+        alert(strings[i]);
+        i = i+1;
+        if ( i === strings.length){
+            i = 0;
+            clearInterval(testingInterval);
+        }
+    },2000);
 }
 
 function myMap() {
