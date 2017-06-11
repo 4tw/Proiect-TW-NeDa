@@ -6,9 +6,9 @@ var url = "http://localhost:9999/aftershocks/detailed";
 function alertMe() {
     var xhttp = new XMLHttpRequest();
     xhttp.addEventListener("load",function() {
-        var i = 0;
-        var ourData=JSON.parse(xhttp.responseText);
-        startAlerting(ourData, i);
+        var currentDistrict = 0;
+        var earthquakeData=JSON.parse(xhttp.responseText);
+        showEarthquakeAftershocks(earthquakeData, currentDistrict);
     } );
     xhttp.open("GET", url, true);
     xhttp.send();
@@ -16,7 +16,7 @@ function alertMe() {
 
 }
 
-function startAlerting(strings, i){
+function showEarthquakeAftershocks(earthquakeData, currentDistrict){
     var mapOptions = {
         zoom: 7,
         center: new google.maps.LatLng(28.502943, 83.619921),
@@ -24,38 +24,38 @@ function startAlerting(strings, i){
     document.getElementById("googleMap").innerHTML = "";
     var map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
 
-    var cityCircle = new google.maps.Circle({
-        strokeColor: '#FF0000',
-        strokeOpacity: 0.8,
-        strokeWeight: 2,
-        fillColor: '#E16D65',
-        fillOpacity: 0,
-        map: map,
-        center: {lat : 28.502943, lng : 83.619921},
-        radius: 15000
-    });
+    var i = 0;
 
-    var maxRadius = 100000;
-    var changeCircleRadius = setInterval(function(){
 
-        cityCircle.setRadius(cityCircle.getRadius() + 3000);
+    var startDrawingCircles = setInterval(function(){
+        var earthquakeCircle = new google.maps.Circle({
+            strokeColor: '#FF0000',
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: '#E16D65',
+            fillOpacity: 0,
+            map: map,
+            center: {lat : earthquakeData[currentDistrict][0], lng : earthquakeData[currentDistrict][1]},
+            radius: 15000
+        });
 
-        if(cityCircle.getRadius() > maxRadius){
-            clearInterval(changeCircleRadius);
-            cityCircle.setRadius(5000);
-            cityCircle.fillOpacity = 1;
+        var maxRadius = 100000;
+        var changeCircleRadius = setInterval(function(){
+
+            earthquakeCircle.setRadius(earthquakeCircle.getRadius() + 4000);
+
+            if(earthquakeCircle.getRadius() > maxRadius){
+                clearInterval(changeCircleRadius);
+                earthquakeCircle.setRadius(5000);
+                earthquakeCircle.fillOpacity = 1;
+            }
+        }, 125);
+        currentDistrict = currentDistrict + 1;
+        if(currentDistrict === earthquakeData.length){
+            clearInterval(startDrawingCircles);
+            currentDistrict = 0;
         }
-    }, 50);
-
-
-    var testingInterval = setInterval(function(){
-        //alert(strings[i]);
-        i = i+1;
-        if ( i === strings.length){
-            i = 0;
-            clearInterval(testingInterval);
-        }
-    },2000);
+    },3000);
 }
 
 function myMap() {
