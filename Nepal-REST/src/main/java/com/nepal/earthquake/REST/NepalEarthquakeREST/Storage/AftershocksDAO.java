@@ -17,6 +17,8 @@ public interface AftershocksDAO {
 
     List<Aftershocks> getAll();
 
+    List<Object[]> getDetailedInformation();
+
     List<Aftershocks> getTop3ByMagnitude();
 
     List<Aftershocks> getLast3ByMagnitude();

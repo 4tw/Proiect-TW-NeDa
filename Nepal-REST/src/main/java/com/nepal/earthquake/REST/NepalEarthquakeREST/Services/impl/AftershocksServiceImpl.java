@@ -52,4 +52,9 @@ public class AftershocksServiceImpl implements AftershocksService {
     public List<Aftershocks> getLast3ByMagnitude() {
         return aftershocksDAO.getLast3ByMagnitude();
     }
+
+    @Override
+    public List<Object[]> getDetailedInformation() {
+        return aftershocksDAO.getDetailedInformation();
+    }
 }

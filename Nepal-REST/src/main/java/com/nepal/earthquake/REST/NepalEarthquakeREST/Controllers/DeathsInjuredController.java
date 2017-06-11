@@ -60,6 +60,7 @@ public class DeathsInjuredController {
         /*JSONReader json = new JSONObject(str);
         String xml = XML.toString(json);
         */
+
         return casualtyService.getLast10NumberOfInjuries();
     }
 

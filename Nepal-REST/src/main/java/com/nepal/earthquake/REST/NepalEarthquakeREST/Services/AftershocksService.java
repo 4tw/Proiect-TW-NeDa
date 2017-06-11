@@ -23,6 +23,8 @@ public interface AftershocksService {
 
     List<Aftershocks> getLast3ByMagnitude();
 
+    List<Object[]> getDetailedInformation();
+
 
 
 }

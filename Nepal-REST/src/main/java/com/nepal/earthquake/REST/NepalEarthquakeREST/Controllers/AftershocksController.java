@@ -53,4 +53,9 @@ public class AftershocksController {
     public List<Aftershocks> getLast3Records(){
         return aftershocksService.getLast3ByMagnitude();
     }
+
+    @RequestMapping(value = "/detailed", method = RequestMethod.GET)
+    public List<Object[]> getDetailedInformation(){
+            return aftershocksService.getDetailedInformation();
+    }
 }

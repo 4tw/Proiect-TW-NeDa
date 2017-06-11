@@ -47,6 +47,15 @@ public class JpaAftershocksDAO implements AftershocksDAO {
     }
 
     @Override
+    public List<Object[]> getDetailedInformation() {
+        TypedQuery<Object[]> query = entityManager.createQuery(
+                "select distinct h.latitude, h.longitude, a.district, a.severity, a.hour, a.date from " +
+                        "Aftershocks a, HousesDestroyed h where a.district = h.district " +
+                        "order by 6,5 asc", Object[].class);
+        return query.getResultList();
+    }
+
+    @Override
     public List<Aftershocks> getTop3ByMagnitude() {
         TypedQuery<Aftershocks> query = entityManager.createQuery(
                 "select a from Aftershocks a order by Severity desc", Aftershocks.class);
