@@ -85,7 +85,7 @@ margin:0 auto;
 	  <h1 style="font-family:verdana; color:blue; font-size: 150%">Information about Earthquake response:<br><br></h1>
   <div style="background:rgb(200,200,200);padding:10px;">
   <br><br>
-	  <button id="start">Start</button>
+	  <button onclick="alertMe()">Start</button>
 	  <div id="googleMap" style="width:100%;height:400px;"></div>
 
 	  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFc7pJusrQeKWR-7FpNZUQEa4GUDadyi8&callback=myMap"></script>
