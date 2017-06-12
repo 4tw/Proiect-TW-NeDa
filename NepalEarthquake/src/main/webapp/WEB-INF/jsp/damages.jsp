@@ -53,8 +53,8 @@
     <div class="row">
             <div class="col-sm-6">
                 <div id="map"></div><br>
-                <button onclick="initMap()">Start to show the heatpoints</button>
-                <button onclick="initMap1()">Back to the original map</button>
+                <button class="button1" onclick="initMap()">Start to show the heatpoints</button>
+                <button class="button2" onclick="initMap1()">Back to the original map</button>
             </div>
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDX9nXsXlEVuMa1TJmsOaY7nj9M7jOGMj4&libraries=visualization&callback=initMap1"></script>
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -62,3 +62,5 @@
 </div>
 </body>
 </html>
+
+<a href="#" class="myButton">blue</a>
