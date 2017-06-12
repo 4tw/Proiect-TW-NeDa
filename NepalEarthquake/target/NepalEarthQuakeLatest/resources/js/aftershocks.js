@@ -3,7 +3,7 @@
  */
 var url = "http://localhost:9999/aftershocks/detailed";
 
-function alertMe() {
+function startAnimation() {
     var xhttp = new XMLHttpRequest();
     xhttp.addEventListener("load",function() {
         var currentDistrict = 0;
@@ -23,9 +23,30 @@ function showEarthquakeAftershocks(earthquakeData, currentDistrict){
     };
     document.getElementById("googleMap").innerHTML = "";
     var map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
+    var earthquakeTable = document.getElementById("earthquakeTable");
+    earthquakeTable.innerHTML = "";
 
-    var i = 0;
+    earthquakeTable.style.backgroundColor = "LightGreen";
 
+    var header = earthquakeTable.createTHead();
+    var row = header.insertRow(0);
+
+    row.style.height = 100;
+    row.style.backgroundColor = "LightBlue";
+    var cell = row.insertCell(0);
+
+    cell.innerHTML = "<b>District</b>";
+
+    cell = row.insertCell(1);
+    cell.innerHTML = "<b>Magnitude</b>";
+
+    cell = row.insertCell(2);
+    cell.innerHTML = "<b>Date</b>";
+
+    cell = row.insertCell(3);
+    cell.innerHTML = "<b>Hour</b>";
+
+    earthquakeTable.style.backgroundColor = "gray";
 
     var startDrawingCircles = setInterval(function(){
         var earthquakeCircle = new google.maps.Circle({
@@ -50,6 +71,9 @@ function showEarthquakeAftershocks(earthquakeData, currentDistrict){
                 earthquakeCircle.fillOpacity = 1;
             }
         }, 125);
+
+        createRow(earthquakeTable, earthquakeData, currentDistrict);
+
         currentDistrict = currentDistrict + 1;
         if(currentDistrict === earthquakeData.length){
             clearInterval(startDrawingCircles);
@@ -57,6 +81,31 @@ function showEarthquakeAftershocks(earthquakeData, currentDistrict){
         }
     },3000);
 }
+
+function createRow(earthquakeTable, earthquakeData, currentDistrict) {
+    var header = earthquakeTable.createTHead();
+    var row = header.insertRow(currentDistrict+1);
+
+    if(currentDistrict % 2 === 1){
+        row.style.backgroundColor = "white";
+    }
+
+    row.style.height = 100;
+    var cell = row.insertCell(0);
+
+    cell.innerHTML = "<b>" + earthquakeData[currentDistrict][2] + "</b>";
+
+    cell = row.insertCell(1);
+    cell.innerHTML = "<b>" +  earthquakeData[currentDistrict][3] + "</b>";
+
+    cell = row.insertCell(2);
+    cell.innerHTML = "<b>" +  earthquakeData[currentDistrict][5] + "</b>";
+
+    cell = row.insertCell(3);
+    cell.innerHTML = "<b>" +  earthquakeData[currentDistrict][4] + "</b>";
+
+}
+
 
 function myMap() {
     var mapProp= {

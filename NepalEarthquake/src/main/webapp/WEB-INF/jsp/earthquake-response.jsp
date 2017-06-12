@@ -7,7 +7,10 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	     <style>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+	<style>
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       width: 40%;
@@ -39,7 +42,7 @@ margin:0 auto;
       margin: 0 auto;
 	  background:transparent ;
       max-width: 970px;
-	  height:60%;
+	  height:100%;
    }
 }
   </style>
@@ -82,15 +85,15 @@ margin:0 auto;
 		</ul>
     </nav>
 	</div>
-	  <h1 style="font-family:verdana; color:blue; font-size: 150%">Information about Earthquake response:<br><br></h1>
-  <div style="background:rgb(200,200,200);padding:10px;">
-  <br><br>
-	  <button onclick="alertMe()">Start</button>
-	  <div id="googleMap" style="width:100%;height:400px;"></div>
+	<div>
+	  	<button onclick="startAnimation()">Start</button>
+		<div id="googleMap" style="width:950px;height:550px;"></div>
+		<br><br>
+		<table id="earthquakeTable" style="width:100%"></table>
+	</div>
 
-	  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFc7pJusrQeKWR-7FpNZUQEa4GUDadyi8&callback=myMap"></script>
 
-  </div>
+	  	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFc7pJusrQeKWR-7FpNZUQEa4GUDadyi8&callback=myMap"></script>
 </div>
 </body>
 </html>
