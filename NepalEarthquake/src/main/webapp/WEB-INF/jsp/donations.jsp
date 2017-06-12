@@ -12,7 +12,6 @@
     <script src="/resources/js/pie.js" type="text/javascript"></script>
     <link rel="stylesheet" href="/resources/css/donations.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-    <script src="https://rawgit.com/niklasvh/html2canvas/master/dist/html2canvas.min.js"></script>
 
 
 </head>
@@ -54,7 +53,7 @@
         </nav>
     </div>
     <h1 style="font-family:verdana; color:hsl(0,0%,2%); font-size: 150%">Donations made by charitable organizations:<br><br></h1>
-    <div style="background:rgba(255,255,255,0.5);padding:10px;">
+    <div style="background:rgba(255,255,255,0.6);padding:10px;">
         <div class="row">
             <div class="col-sm-8 col-md-8">
                 <div id="chart" class="chart-container">
@@ -65,6 +64,8 @@
                 <br><br>
                 <form class="form-inline">
                     <div class="form-group">
+                        <p>Select the desired chart type.</p>
+                        <br>
                         <label for="sel2">Chart Type:</label>
                         <select class="form-control" id="sel2" onchange="getSelectValue();">
                             <option value="pie" selected="selected">Pie Chart</option>
