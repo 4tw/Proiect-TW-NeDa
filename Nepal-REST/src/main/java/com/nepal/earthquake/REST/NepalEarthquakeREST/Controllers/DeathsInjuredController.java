@@ -31,35 +31,41 @@ public class DeathsInjuredController {
 
     @RequestMapping(method = RequestMethod.GET)
     public List<DeathsAndInjured> getCasualty(@RequestParam(required = false) Map<String, String> q){
+        System.out.println("[DeathsInjured] All entries.");
         return casualtyService.getAll();
 
     }
 
     @RequestMapping(value = "/top10Deaths", method = RequestMethod.GET)
-    public List<DeathsAndInjured> getTop3Deaths(@RequestParam(required = false)Map<String,String> q){
+    public List<DeathsAndInjured> getTop10Deaths(@RequestParam(required = false)Map<String,String> q){
+        System.out.println("[DeathsInjured] Top 10 entries with highest deaths.");
         return casualtyService.getTop10NumberOfDeaths();
     }
 
     @RequestMapping(value = "/last10Deaths", method = RequestMethod.GET)
-    public List<DeathsAndInjured> getLast3Deaths(@RequestParam(required = false)Map<String,String> q){
+    public List<DeathsAndInjured> getLast10Deaths(@RequestParam(required = false)Map<String,String> q){
+        System.out.println("[DeathsInjured] Last 10 entries with lowest deaths.");
         return casualtyService.getLast10NumberOfDeaths();
     }
 
     @RequestMapping(value = "/top10Injuries", method = RequestMethod.GET)
-    public List<DeathsAndInjured> getTop3Injuries(@RequestParam(required = false)Map<String,String> q){
+    public List<DeathsAndInjured> getTop10Injuries(@RequestParam(required = false)Map<String,String> q){
+        System.out.println("[DeathsInjured] ");
         return casualtyService.getTop10NumberOfInjuries();
     }
 
     @RequestMapping(value = "/last10Injuries", method = RequestMethod.GET)
-    public List<DeathsAndInjured> getLast3Injuries(@RequestParam(required = false)Map<String,String> q){
+    public List<DeathsAndInjured> getLast10Injuries(@RequestParam(required = false)Map<String,String> q){
+        System.out.println("[DeathsInjured] Last 10 entries with lowest injuries");
         return casualtyService.getLast10NumberOfInjuries();
     }
 
     @RequestMapping(value = "/last10Injuries/xml", method = RequestMethod.GET)
-    public List<DeathsAndInjured> getLast3InjuriesXml(@RequestParam(required = false)Map<String,String> q){
+    public List<DeathsAndInjured> getLast10InjuriesXml(@RequestParam(required = false)Map<String,String> q){
         /*JSONReader json = new JSONObject(str);
         String xml = XML.toString(json);
         */
+        System.out.println("[DeathsInjured] Last 10 entries with lowest injuries.");
 
         return casualtyService.getLast10NumberOfInjuries();
     }
