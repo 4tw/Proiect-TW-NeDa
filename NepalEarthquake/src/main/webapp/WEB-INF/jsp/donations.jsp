@@ -18,7 +18,7 @@
 <body>
 <div class="container-fluid">
     <div class="hidden-xs">
-        <nav class="navbar navbar-inverse navbar-static-top" style="padding-right: 20px;">
+        <nav id="nav1" class="navbar navbar-inverse navbar-static-top" >
             <div class="navbar-header">
                 <a class="navbar-brand" href="index">Nepal Earthquake</a>
             </div>
@@ -52,9 +52,9 @@
             </ul>
         </nav>
     </div>
-    <h1 style="font-family:verdana; color:hsl(0,0%,2%); font-size: 150%">Donations made by charitable organizations:<br><br></h1>
-    <div style="background:rgba(255,255,255,0.6);padding:10px;">
-        <div class="row">
+    <h1>Donations made by charitable organizations:<br><br></h1>
+    <div id="mydiv">
+        <div class="row" id="row1">
             <div class="col-sm-8 col-md-8">
                 <div id="chart" class="chart-container">
                     <canvas id="myChart"></canvas>

@@ -14,19 +14,30 @@ body {
 p{
     font-size:17px;
     font-family: "Times New Roman", Georgia, Serif;
+    color: #dad4d1;
+}
+label{
+    color:#dad4d1;
 }
 
-div{
-    background:transparent;
-    margin:0 auto;
-}
-#div1{
+.mydiv{
     background-color: rgba(0, 0, 0, 0.60);
     margin:0 auto;
     pading: 10px;
     width: 100%;
     height: 500px;
 }
+
+div{
+    background:transparent;
+    margin:0 auto;
+}
+
+#nav1{
+    padding-right: 20px;
+}
+
+
 .container-fluid {
     margin: 0 auto;
     background:transparent ;
@@ -35,12 +46,8 @@ div{
 }
 #row1{
     margin : 0 auto;
+    background-color: rgba(0,0,0,0.6)
 }
-
-/*.chart-container {
-    width: 100%;
-    height: 700px;
-    margin: 0 auto;
-    padding: 0;
-    background:transparent ;
-}*/
+h1{
+    font-family:verdana; color:hsl(0,0%,2%); font-size: 150%
+}
