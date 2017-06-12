@@ -45,13 +45,14 @@ window.onload = function() {
                     position: "top",
                     text: "Top donations (in $)",
                     fontSize: 20,
-                    fontStyle: "bold"
+                    fontStyle: "bold",
+                    fontColor: "#dad4d1"
                 },
                 legend: {
                     display: true,
                     position: 'top',
                     labels: {
-                        fontColor: 'rgb(0,0,0)',
+                        fontColor: "#dad4d1"
                     }
                 }
             }
