@@ -30,7 +30,7 @@
 			<li ><a href="damages">Damages</a></li>
 			<li><a href="earthquake-propagation">Earthquake Propagation</a></li>
 			<li><a href="earthquake-response">Earthquake response</a></li>
-			<li><a href="map">InteractivMap</a></li>
+			<li><a href="map">About</a></li>
 		</ul>
     </nav>
 	</div>
