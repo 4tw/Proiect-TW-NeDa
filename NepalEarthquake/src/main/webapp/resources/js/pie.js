@@ -39,10 +39,11 @@ window.onload = function() {
             },
             options: {
                 cutoutPercentage: 20,
+                responsive: true,
                 title: {
                     display: true,
                     position: "top",
-                    text: "Donations(amount of $)",
+                    text: "Top donations (in $)",
                     fontSize: 20,
                     fontStyle: "bold"
                 },
@@ -50,12 +51,13 @@ window.onload = function() {
                     display: true,
                     position: 'top',
                     labels: {
-                        fontColor: 'rgb(255, 99, 132)'
+                        fontColor: 'rgb(0,0,0)',
                     }
                 }
             }
 
         }
+
         myChart = new Chart(ctx, myChartConfig);
     });
     xhttp.open("GET", url, true);
