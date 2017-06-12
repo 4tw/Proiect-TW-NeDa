@@ -6,6 +6,14 @@ function initMap() {
 
     var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
+    google.maps.event.addDomListener(window, "resize", function() {
+        var center = map.getCenter();
+        google.maps.event.trigger(map, "resize");
+        map.setCenter(center);
+    });
+
+
+
     var testing = new XMLHttpRequest();
 
     function returnResults(line){
@@ -20,9 +28,10 @@ function initMap() {
         var heatmap;
         heatmap = new google.maps.visualization.HeatmapLayer({
             data: myHeatMap,
-            radius: 40,
-            opacity: 0.5,
-            maxIntensity: 10000
+            radius: 50,
+            opacity: 0.7,
+            maxIntensity: 50000,
+            intensity: 200
         });
 
         heatmap.setMap(map);
@@ -32,19 +41,18 @@ function initMap() {
     testing.send();
 
 }
-function addScript( url, callback ) {
-    var script = document.createElement( 'script' );
-    if( callback ) script.onload = callback;
-    script.type = 'text/javascript';
-    script.src = url;
-    document.body.appendChild( script );
+
+function initMap1() {
+    var mapOptions = {
+        zoom: 8,
+        center: new google.maps.LatLng(27.647084, 85.347761),
+    };
+
+    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
 }
 
-function loadMapsAPI() {
-    addScript( 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDX9nXsXlEVuMa1TJmsOaY7nj9M7jOGMj4&libraries=visualization&callback=initMap');
-}
 
-window.onload = loadMapsAPI;
 
 
 

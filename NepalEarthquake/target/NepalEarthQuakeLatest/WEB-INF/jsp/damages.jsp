@@ -10,6 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="/resources/js_damage/heatmap.js" type="text/javascript"> </script>
 
+
 </head>
 <body>
 <div class="container-fluid">
@@ -48,15 +49,16 @@
             </ul>
         </nav>
     </div>
-    <h1 style="font-family:verdana; background:rgba(255,255,255,0.5);padding:10px;color:black; font-size: 150%">A heatmap that shows the most affected areas by the 2015's earthquake:<br><br></h1>
-        <div class="row">
+    <br>
+    <div class="row">
             <div class="col-sm-6">
-                <div id="map" style="width:940px;height:500px;background:yellow"></div>
+                <div id="map"></div><br>
+                <button onclick="initMap()">Start to show the heatpoints</button>
+                <button onclick="initMap1()">Back to the original map</button>
             </div>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDX9nXsXlEVuMa1TJmsOaY7nj9M7jOGMj4&libraries=visualization&callback=initMap1"></script>
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </div>
-    </div>
-</div>
 </div>
 </body>
 </html>

@@ -27,4 +27,8 @@ div{
     max-width: 970px;
     height:60%;
 }
+#map {
+    height: 500px;
+    width: 940px;
+}
 
