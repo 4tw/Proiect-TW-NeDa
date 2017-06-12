@@ -1,14 +1,14 @@
 anychart.onDocumentReady(function () {
-    // create data set
+    // preluam datele
     var dataSet = anychart.data.set(getData());
 
-    // create map chart
+    // cream harta cu informatii despre zonele din nepal
     map = anychart.map();
 
     map.geoData(anychart.maps.nepal);
     map.padding(0);
-    var lat_data, long_data, region_data;
-    // create map title
+    var region_data;
+    // alegem un titlu
     map.title().enabled(true).padding([20, 0, 20, 0]).text("Click on a zone for generate your graph.");
     map.background('transparent');
     //create choropleth series
@@ -33,7 +33,7 @@ anychart.onDocumentReady(function () {
     //set series geo id field settings
     series.geoIdField("id");
 
-    // add pointsHover listener to get hovered region
+    // add evenimente
     map.listen('pointsHover', function (evt) {
         if (evt.seriesStatus[0].points[0]) {
             region_data = evt.seriesStatus[0].points[0].properties.name;
@@ -86,101 +86,73 @@ function get_dataGraphic(jsonData)
     for(var i=0;i<jsonData.length;i++)
     {var a=[];
         a[0]=jsonData[i][0];
-        a[1]=jsonData[i][2];
-        a[2]=jsonData[i][1];
+        a[1]=(-1)*jsonData[i][1];
+        a[2]=jsonData[i][2];
         json[i]=a;
     }
 }
 function  drawGraph( zone) {
-    alert(json);
-    // create pie chart with passed data
-    var dataSet = anychart.data.set(json);
-    // map data for the first series, take x from the zero column and value from the first column of data set
-    var seriesData_1 = dataSet.mapAs({x: [0], value: [1]});
-    // map data for the second series, take x from the zero column and value from the second column of data set
-    var seriesData_2 = dataSet.mapAs({x: [0], value: [2]});
-    // create bar chart
-    chart = anychart.bar();
+        // creare chart
+        var dataSet = anychart.data.set(json);
 
-    // turn on chart animation
-    chart.animation(true);
+        // preluam prima valoare a json-ului si a doua
+        var seriesData_1 = dataSet.mapAs({x: [0], value: [1]});
 
-    // set padding
-    chart.padding([10, 20, 5, 20]);
-    chart.background('transparent');
+        // preluam prima valoare a json-ului si a treia
+        var seriesData_2 = dataSet.mapAs({x: [0], value: [2]});
 
-    // force chart to stack values by Y scale.
-    chart.yScale().stackMode('value');
+        chart = anychart.column();
+        chart.animation(true);
 
-    // format y axis labels so they are always positive
-    chart.yAxis().labels().format(function () {
-        return Math.abs(this.value).toLocaleString();
-    });
+        chart.title('No of deaths in ' + zone);
+        chart.title().padding([0, 0, 10, 0]);
+        chart.background('transparent');
+        var series;
 
-    // allow labels to overlap
-    chart.xAxis(0).overlapMode("allowOverlap");
+        // helper function to setup label settings for all series
+        var setupSeries = function (series, name) {
+            series.name(name);
+            series.selectFill('#f48fb1 0.8')
+                .selectStroke('2 #c2185b');
+        };
 
-    // turn on extra axis for the symmetry
-    chart.xAxis(1)
-        .enabled(true)
-        .orientation('right')
-        .overlapMode("allowOverlap");
+        series = chart.column(seriesData_1);
+        series.xPointPosition(0.45);
+       series.name( 'Men');
+        series.selectFill('#f48fb1 0.8')
+        .selectStroke('2 #c2185b');
 
-    // set chart title text
-    chart.title('No of deaths in '+zone);
+        series = chart.column(seriesData_2);
+        series.xPointPosition(0.25);
+       series.name('Women');
+    series.selectFill('#f48fb1 0.8')
+        .selectStroke('2 #c2185b');
 
-    chart.interactivity().hoverMode('byY');
+        chart.barGroupsPadding(0.3);
 
-    chart.tooltip()
-        .title(false)
-        .separator(false)
-        .displayMode('separated')
-        .positionMode('point')
-        .useHtml(true)
-        .fontSize(15)
-        .offsetX(5)
-        .offsetY(0)
-        .format(function () {
-            return '<span style="color: #262129"></span>' + Math.abs(this.value).toLocaleString();
-        });
+        // format numbers in y axis label to match browser locale
+        //chart.yAxis().labels().format('{%Value}{groupsSeparator: }');
 
-    // temp variable to store series instance
-    var series;
 
-    // create first series with mapped data
-    series = chart.bar(seriesData_1);
-    series.tooltip()
-        .position('right')
-        .anchor('left');
-    series.color("#327793");
-    series.name('Male');
+        // turn on legend
+        chart.legend()
+            .enabled(true)
+            .fontSize(13)
+            .padding([0, 0, 20, 0]);
 
-    // create second series with mapped data
-    series = chart.bar(seriesData_2);
-    series.tooltip()
-        .position('left')
-        .anchor('right');
-    series.color("#9a7d7d");
-    series.name('Womens');
+        chart.interactivity().hoverMode('single');
 
-    // turn on legend
-    chart.legend()
-        .enabled(true)
-        .inverted(true)
-        .fontSize(15)
-        .padding([10, 10, 20, 10]);
-    chart.height(350);
-    chart.width(450);
-    // set container id for the chart
-    document.getElementById('graphic').innerHTML = "";
-    chart.container('graphic');
-    // initiate chart drawing
-    chart.draw();
-    var buttonJPG = document.getElementById("btnJPG");
-    var buttonSVG = document.getElementById("btnSVG");
-    var buttonPNG = document.getElementById("btnPNG");
+        chart.tooltip().format('{%Value}{groupsSeparator: }');
+        // set container id for the chart
+        document.getElementById('graphic').innerHTML = "";
+        chart.container('graphic');
+
+        chart.draw();
+        var buttonJPG = document.getElementById("btnJPG");
+        var buttonSVG = document.getElementById("btnSVG");
+        var buttonPNG = document.getElementById("btnPNG");
 // 3. Add event handler
-    buttonJPG.addEventListener ("click", function (){chart.saveAsJpg({width: 360, height: 500, quality: 0.3, forceTransparentWhite: "false", filename: "Deaths_injured"})});
-    buttonSVG.addEventListener ("click", function (){chart.saveAsSvg({width: 360, height: 500, filename: 'custom_name'})});
-    buttonPNG.addEventListener ("click", function (){chart.saveAsSvg({width: 360, height: 500, quality: 0.3, filename: "custom_name"})});
+        buttonJPG.addEventListener ("click", function (){chart.saveAsJpg({width: 360, height: 500, quality: 0.3, forceTransparentWhite: "false", filename: "Deaths"})});
+        buttonSVG.addEventListener ("click", function (){chart.saveAsSvg({width: 360, height: 500, filename: 'Deaths'})});
+        buttonPNG.addEventListener ("click", function (){chart.saveAsPng({width: 360, height: 500, quality: 0.3, filename: "Deaths"})});
 }
