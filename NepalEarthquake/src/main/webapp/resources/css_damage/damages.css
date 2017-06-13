@@ -12,7 +12,7 @@ body {
     background-size: cover;
 }
 p{
-    /*font: rgb(0, 0, 0); */
+    /*font:rgb(0,0,0);*/
     font-size:17px;
     font-family: "Times New Roman", Georgia, Serif;
 }
@@ -24,12 +24,15 @@ div{
 .container-fluid {
     margin: 0 auto;
     background:transparent ;
-    max-width: 970px;
-    height:60%;
+    max-width: 100%;
 }
-#map {
-    height: 500px;
-    width: 940px;
+
+#map{
+    height: 5px;
+    overflow: hidden;
+    padding-bottom: 30.25%;
+    padding-top: 50px;
+    position: relative;
 }
 .button {
     background-color: #e7e7e7;
