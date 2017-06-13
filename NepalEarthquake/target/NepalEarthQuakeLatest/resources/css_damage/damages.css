@@ -31,13 +31,30 @@ div{
     height: 500px;
     width: 940px;
 }
-.button1 {
-    background-color: #f44336; /* Red */
+.button {
+    background-color: #e7e7e7; color: black; /* Gray */
+    float: left;
     border: none;
-    color: white;
+    color: black;
+    padding: 10px 25px;
+    font-size: 14px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+
+
+
+
+
+
+}
+.button2 {
+    border: none;
+    color: black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: inline;
+    margin-right: 5px;
 }
