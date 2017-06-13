@@ -1,31 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43660def-09a4-4de0-ab88-20aabe97122e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/damage.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/earthquake-propagation.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/earthquake-response.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/map.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/WEB-INF/jsp/damage.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/WEB-INF/jsp/earthquake-propagation.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/WEB-INF/jsp/earthquake-response.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/WEB-INF/jsp/map.jsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/NepalEarthQuakeLatest.war" afterPath="$PROJECT_DIR$/target/NepalEarthQuakeLatest.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/WEB-INF/classes/com/nepal/earthquake/Controllers/MainController.class" afterPath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/WEB-INF/classes/com/nepal/earthquake/Controllers/MainController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/nepal/earthquake/Controllers/MainController.class" afterPath="$PROJECT_DIR$/target/classes/com/nepal/earthquake/Controllers/MainController.class" />
+    <list default="true" id="43660def-09a4-4de0-ab88-20aabe97122e" name="Default" comment="Integration Progress: 80%.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Nepal-REST/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Nepal-REST/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/Controllers/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/Controllers/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/damages.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/damages.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/deaths.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/deaths.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/deaths.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/deaths.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/graphic_deaths.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/graphic_deaths.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/WEB-INF/jsp/damages.jsp" afterPath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/WEB-INF/jsp/damages.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/WEB-INF/jsp/deaths.jsp" afterPath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/WEB-INF/jsp/deaths.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/WEB-INF/jsp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/resources/css/deaths.css" afterPath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/resources/css/deaths.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/resources/js/graphic_deaths.js" afterPath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/resources/js/graphic_deaths.js" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -104,17 +82,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="donations.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="donations.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/donations.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="47" column="61" lean-forward="false" selection-start-line="47" selection-start-column="61" selection-end-line="47" selection-end-column="61" />
+            <state relative-caret-position="119">
+              <caret line="7" column="54" lean-forward="true" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="heatmap.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="heatmap.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/heatmap.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -928,12 +906,20 @@
       <workItem from="1497300941332" duration="111000" />
       <workItem from="1497301188994" duration="119000" />
       <workItem from="1497331958724" duration="4405000" />
-      <workItem from="1497341051938" duration="2795000" />
+      <workItem from="1497341051938" duration="2953000" />
     </task>
+    <task id="LOCAL-00001" summary="Integration Progress: 80%.">
+      <created>1497343921008</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1497343921009</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33385000" />
+    <option name="totallyTimeSpent" value="33543000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1014,6 +1000,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Integration Progress: 80%." />
+    <option name="LAST_COMMIT_MESSAGE" value="Integration Progress: 80%." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1384,14 +1374,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/donations.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="61" lean-forward="false" selection-start-line="47" selection-start-column="61" selection-end-line="47" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/earthquake-propagation.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -1448,6 +1430,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/donations.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="54" lean-forward="true" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
           <folding />
         </state>
       </provider>
