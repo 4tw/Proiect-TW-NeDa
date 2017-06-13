@@ -8,56 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-
-    <style>
-        .carousel-inner > .item > img,
-        .carousel-inner > .item > a > img {
-            width: 40%;
-            margin: auto;
-            height : 60%;
-        }
-        body {
-            background: url("/resources/img/background.jpg") no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-        p{
-            font:rgb(0,0,0);
-            font-size:17px;
-            font-family: "Times New Roman", Georgia, Serif;
-        }
-
-        div{
-            background:transparent;
-            margin:0 auto;
-        }
-        .container-fluid {
-            margin: 0 auto;
-            background:transparent ;
-            width: 1000px;
-        }
-        #animationButton {
-            background-color: #4CAF50; /* Black */
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 14px;
-        }
-        #googleMap{
-            height: 5px;
-            overflow: hidden;
-            padding-bottom: 30.25%;
-            padding-top: 50px;
-            position: relative;
-        }
-
-    </style>
+    <link rel="stylesheet" href="/resources/css/aftershocks.css" />
     <script src="/resources/js/aftershocks.js"></script>
 </head>
 <body>
