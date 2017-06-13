@@ -42,7 +42,7 @@ margin:0 auto;
   .container-fluid {
       margin: 0 auto;
 	  background:transparent ;
-      max-width: 970px;
+      max-width: 1000px;
    }
   </style>
   </head>
@@ -58,8 +58,8 @@ margin:0 auto;
 			<li><a href="deaths">Deaths</a></li>
 			<li><a href="damages">Damages</a></li>
 			<li><a href="earthquake-propagation">Earthquake Propagation</a></li>
-			<li><a href="earthquake-response">Earthquake response</a></li>
-			<li><a href="map">About</a></li>
+			<li><a href="aftershocks">Aftershocks</a></li>
+			<li><a href="about">About</a></li>
 		</ul>
     </nav>
 	</div>
@@ -75,9 +75,9 @@ margin:0 auto;
 			<li class="active"><a href="index">Home</a></li>
 			<li><a href="deaths">Deaths</a></li>
 			<li><a href="damages">Damages</a></li>
-			<li><a href="earthquake-propagation">Earthquake Propagation</a></li>
-			<li><a href="earthquake-response">Earthquake response</a></li>
-			<li><a href="map">InteractivMap</a></li>
+			<li><a href="donations">Donations</a></li>
+			<li><a href="aftershocks">Aftershocks</a></li>
+			<li><a href="about">About</a></li>
           </ul>
         </li>
 		</ul>

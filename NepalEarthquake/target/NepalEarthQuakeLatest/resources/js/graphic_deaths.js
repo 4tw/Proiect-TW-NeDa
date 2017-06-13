@@ -92,67 +92,67 @@ function get_dataGraphic(jsonData)
     }
 }
 function  drawGraph( zone) {
-        // creare chart
-        var dataSet = anychart.data.set(json);
+    // creare chart
+    var dataSet = anychart.data.set(json);
 
-        // preluam prima valoare a json-ului si a doua
-        var seriesData_1 = dataSet.mapAs({x: [0], value: [1]});
+    // preluam prima valoare a json-ului si a doua
+    var seriesData_1 = dataSet.mapAs({x: [0], value: [1]});
 
-        // preluam prima valoare a json-ului si a treia
-        var seriesData_2 = dataSet.mapAs({x: [0], value: [2]});
+    // preluam prima valoare a json-ului si a treia
+    var seriesData_2 = dataSet.mapAs({x: [0], value: [2]});
 
-        chart = anychart.column();
-        chart.animation(true);
+    chart = anychart.column();
+    chart.animation(true);
 
-        chart.title('No of deaths in ' + zone);
-        chart.title().padding([0, 0, 10, 0]);
-        chart.background('transparent');
-        var series;
+    chart.title('No of deaths in ' + zone);
+    chart.title().padding([0, 0, 10, 0]);
+    chart.background('transparent');
+    var series;
 
-        // helper function to setup label settings for all series
-        var setupSeries = function (series, name) {
-            series.name(name);
-            series.selectFill('#f48fb1 0.8')
-                .selectStroke('2 #c2185b');
-        };
-
-        series = chart.column(seriesData_1);
-        series.xPointPosition(0.45);
-       series.name( 'Men');
+    // helper function to setup label settings for all series
+    var setupSeries = function (series, name) {
+        series.name(name);
         series.selectFill('#f48fb1 0.8')
-        .selectStroke('2 #c2185b');
+            .selectStroke('2 #c2185b');
+    };
 
-        series = chart.column(seriesData_2);
-        series.xPointPosition(0.25);
-       series.name('Women');
+    series = chart.column(seriesData_1);
+    series.xPointPosition(0.45);
+    series.name( 'Men');
     series.selectFill('#f48fb1 0.8')
         .selectStroke('2 #c2185b');
 
-        chart.barGroupsPadding(0.3);
+    series = chart.column(seriesData_2);
+    series.xPointPosition(0.25);
+    series.name('Women');
+    series.selectFill('#f48fb1 0.8')
+        .selectStroke('2 #c2185b');
 
-        // format numbers in y axis label to match browser locale
-        //chart.yAxis().labels().format('{%Value}{groupsSeparator: }');
+    chart.barGroupsPadding(0.3);
+
+    // format numbers in y axis label to match browser locale
+    //chart.yAxis().labels().format('{%Value}{groupsSeparator: }');
 
 
-        // turn on legend
-        chart.legend()
-            .enabled(true)
-            .fontSize(13)
-            .padding([0, 0, 20, 0]);
+    // turn on legend
+    chart.legend()
+        .enabled(true)
+        .fontSize(13)
+        .padding([0, 0, 20, 0]);
 
-        chart.interactivity().hoverMode('single');
+    chart.interactivity().hoverMode('single');
 
-        chart.tooltip().format('{%Value}{groupsSeparator: }');
-        // set container id for the chart
-        document.getElementById('graphic').innerHTML = "";
-        chart.container('graphic');
+    chart.tooltip().format('{%Value}{groupsSeparator: }');
+    // set container id for the chart
+    document.getElementById('graphic').innerHTML = "";
+    chart.container('graphic');
 
-        chart.draw();
-        var buttonJPG = document.getElementById("btnJPG");
-        var buttonSVG = document.getElementById("btnSVG");
-        var buttonPNG = document.getElementById("btnPNG");
+    chart.draw();
+    var buttonJPG = document.getElementById("btnJPG");
+    var buttonSVG = document.getElementById("btnSVG");
+    var buttonPNG = document.getElementById("btnPNG");
 // 3. Add event handler
-        buttonJPG.addEventListener ("click", function (){chart.saveAsJpg({width: 360, height: 500, quality: 0.3, forceTransparentWhite: "false", filename: "Deaths"})});
-        buttonSVG.addEventListener ("click", function (){chart.saveAsSvg({width: 360, height: 500, filename: 'Deaths'})});
-        buttonPNG.addEventListener ("click", function (){chart.saveAsPng({width: 360, height: 500, quality: 0.3, filename: "Deaths"})});
+    buttonJPG.addEventListener ("click", function (){chart.saveAsJpg({width: 360, height: 500, quality: 0.3, forceTransparentWhite: "false", filename: "Deaths"})});
+    buttonSVG.addEventListener ("click", function (){chart.saveAsSvg({width: 360, height: 500, filename: 'Deaths'})});
+    buttonPNG.addEventListener ("click", function (){chart.saveAsPng({width: 360, height: 500, quality: 0.3, filename: "Deaths"})});
 }

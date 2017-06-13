@@ -33,7 +33,7 @@ div{
 .container-fluid {
     margin: 0 auto;
     background:transparent ;
-    max-width: 970px;
+    max-width: 1000px;
     height:60%;
 }
 #graphic,#container {

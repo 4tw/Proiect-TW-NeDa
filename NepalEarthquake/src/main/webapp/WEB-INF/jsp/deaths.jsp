@@ -28,9 +28,9 @@
 			<li ><a href="index">Home</a></li>
 			<li class="active"><a href="deaths">Deaths</a></li>
 			<li ><a href="damages">Damages</a></li>
-			<li><a href="earthquake-propagation">Earthquake Propagation</a></li>
-			<li><a href="earthquake-response">Earthquake response</a></li>
-			<li><a href="map">About</a></li>
+			<li><a href="donations">Donations</a></li>
+			<li><a href="aftershocks">Aftershocks</a></li>
+			<li><a href="about">About</a></li>
 		</ul>
     </nav>
 	</div>
@@ -46,9 +46,9 @@
 			<li ><a href="index">Home</a></li>
 			<li class="active"><a href="deaths">Deaths</a></li>
 			<li><a href="damages">Damages</a></li>
-			<li><a href="earthquake-propagation">Earthquake Propagation</a></li>
-			<li><a href="earthquake-response">Earthquake response</a></li>
-			<li><a href="map">InteractivMap</a></li>
+			<li><a href="donations">Donations</a></li>
+			<li><a href="aftershocks">Aftershocks</a></li>
+			<li><a href="about">about</a></li>
           </ul>
         </li>
 		</ul>

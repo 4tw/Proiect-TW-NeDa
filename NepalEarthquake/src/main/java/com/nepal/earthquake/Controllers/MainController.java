@@ -28,13 +28,13 @@ public class MainController {
     @RequestMapping(path = "/damages",method = RequestMethod.GET )
     public String Damages(){return "damages";}
 
-    @RequestMapping(path = "/earthquake-response",method = RequestMethod.GET )
-    public String EarthquakeResponse(){return "earthquake-response";}
+    @RequestMapping(path = "/aftershocks",method = RequestMethod.GET )
+    public String EarthquakeResponse(){return "aftershocks";}
 
-    @RequestMapping(path = "/map",method = RequestMethod.GET )
-    public String Map(){return "map";}
+    @RequestMapping(path = "/about",method = RequestMethod.GET )
+    public String Map(){return "about";}
 
-    @RequestMapping(path = "/earthquake-propagation",method = RequestMethod.GET )
-    public String EarthquakePropagation(){return "earthquake-propagation";}
+    @RequestMapping(path = "/donations",method = RequestMethod.GET )
+    public String EarthquakePropagation(){return "donations";}
 
 }
