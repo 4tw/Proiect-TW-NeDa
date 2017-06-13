@@ -2,21 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b771b81-68d6-4159-ab14-e64fbde2c5ce" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../scholarly/index.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/src/main/webapp/resources/img/3.jpg" afterPath="$PROJECT_DIR$/../NepalEarthquake/src/main/webapp/resources/img/3.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest.war" afterPath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest/WEB-INF/classes/com/nepal/earthquake/Controllers/MainController.class" afterPath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest/WEB-INF/classes/com/nepal/earthquake/Controllers/MainController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/target/classes/com/nepal/earthquake/Controllers/MainController.class" afterPath="$PROJECT_DIR$/../NepalEarthquake/target/classes/com/nepal/earthquake/Controllers/MainController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest/resources/img/3.jpg" afterPath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest/resources/img/3.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../NepalEarthquake/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/src/main/java/com/nepal/earthquake/Controllers/MainController.java" afterPath="$PROJECT_DIR$/../NepalEarthquake/src/main/java/com/nepal/earthquake/Controllers/MainController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/src/main/webapp/WEB-INF/jsp/about.jsp" afterPath="$PROJECT_DIR$/../NepalEarthquake/src/main/webapp/WEB-INF/jsp/about.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/src/main/webapp/WEB-INF/jsp/aftershocks.jsp" afterPath="$PROJECT_DIR$/../NepalEarthquake/src/main/webapp/WEB-INF/jsp/aftershocks.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/src/main/webapp/WEB-INF/jsp/damages.jsp" afterPath="$PROJECT_DIR$/../NepalEarthquake/src/main/webapp/WEB-INF/jsp/damages.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/src/main/webapp/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/../NepalEarthquake/src/main/webapp/WEB-INF/jsp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/src/main/webapp/resources/js/graphic_deaths.js" afterPath="$PROJECT_DIR$/../NepalEarthquake/src/main/webapp/resources/js/graphic_deaths.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest/WEB-INF/jsp/about.jsp" afterPath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest/WEB-INF/jsp/about.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest/WEB-INF/jsp/aftershocks.jsp" afterPath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest/WEB-INF/jsp/aftershocks.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest/WEB-INF/jsp/damages.jsp" afterPath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest/WEB-INF/jsp/damages.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest/WEB-INF/jsp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest/resources/js/graphic_deaths.js" afterPath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest/resources/js/graphic_deaths.js" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -157,8 +151,8 @@
       <file leaf-file-name="HousesDestroyedController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Controllers/HousesDestroyedController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="35" column="21" lean-forward="false" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+            <state relative-caret-position="85">
+              <caret line="24" column="58" lean-forward="true" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -1043,7 +1037,7 @@
       <workItem from="1497277784959" duration="3067000" />
       <workItem from="1497289241872" duration="1122000" />
       <workItem from="1497336038899" duration="360000" />
-      <workItem from="1497340918276" duration="1911000" />
+      <workItem from="1497340918276" duration="1915000" />
     </task>
     <task id="LOCAL-00001" summary="- Slight modifications, getDonationsByFundation() controller doesn't work.">
       <created>1495466474065</created>
@@ -1259,7 +1253,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137215000" />
+    <option name="totallyTimeSpent" value="137219000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1272,7 +1266,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1292,7 +1285,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3280757" sideWeight="0.70497805" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.70497805" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.49092284" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.48789713" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35139093" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1716,8 +1709,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nepal/earthquake/REST/NepalEarthquakeREST/Controllers/HousesDestroyedController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="35" column="21" lean-forward="false" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+        <state relative-caret-position="85">
+          <caret line="24" column="58" lean-forward="true" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
           <folding />
         </state>
       </provider>

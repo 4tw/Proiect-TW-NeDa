@@ -152,7 +152,13 @@ function  drawGraph( zone) {
     var buttonSVG = document.getElementById("btnSVG");
     var buttonPNG = document.getElementById("btnPNG");
 // 3. Add event handler
-    buttonJPG.addEventListener ("click", function (){chart.saveAsJpg({width: 360, height: 500, quality: 0.3, forceTransparentWhite: "false", filename: "Deaths"})});
-    buttonSVG.addEventListener ("click", function (){chart.saveAsSvg({width: 360, height: 500, filename: 'Deaths'})});
-    buttonPNG.addEventListener ("click", function (){chart.saveAsPng({width: 360, height: 500, quality: 0.3, filename: "Deaths"})});
+    buttonPNG.onclick = function() {
+        chart.saveAsPng();
+    };
+    buttonSVG.onclick = function() {
+        chart.saveAsSvg();
+    };
+    buttonJPG.onclick = function() {
+        chart.saveAsJpg();
+    };
 }

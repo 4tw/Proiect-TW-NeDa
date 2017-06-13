@@ -2,21 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43660def-09a4-4de0-ab88-20aabe97122e" name="Default" comment="Integration Progress: 80%.">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../scholarly/index.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/img/3.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/img/3.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/NepalEarthQuakeLatest.war" afterPath="$PROJECT_DIR$/target/NepalEarthQuakeLatest.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/WEB-INF/classes/com/nepal/earthquake/Controllers/MainController.class" afterPath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/WEB-INF/classes/com/nepal/earthquake/Controllers/MainController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/nepal/earthquake/Controllers/MainController.class" afterPath="$PROJECT_DIR$/target/classes/com/nepal/earthquake/Controllers/MainController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/resources/img/3.jpg" afterPath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/resources/img/3.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Nepal-REST/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Nepal-REST/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/Controllers/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/Controllers/MainController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/about.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/about.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/aftershocks.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/aftershocks.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/damages.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/damages.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/graphic_deaths.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/graphic_deaths.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/WEB-INF/jsp/about.jsp" afterPath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/WEB-INF/jsp/about.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/WEB-INF/jsp/aftershocks.jsp" afterPath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/WEB-INF/jsp/aftershocks.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/WEB-INF/jsp/damages.jsp" afterPath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/WEB-INF/jsp/damages.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/WEB-INF/jsp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/resources/js/graphic_deaths.js" afterPath="$PROJECT_DIR$/target/NepalEarthQuakeLatest/resources/js/graphic_deaths.js" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,6 +30,18 @@
               <caret line="56" column="108" lean-forward="false" selection-start-line="56" selection-start-column="108" selection-end-line="56" selection-end-column="108" />
               <folding>
                 <element signature="n#style#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="graphic_deaths.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/graphic_deaths.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="163" column="1" lean-forward="true" selection-start-line="163" selection-start-column="1" selection-end-line="163" selection-end-column="1" />
+              <folding>
+                <marker date="1497347180069" expanded="true" signature="696:725" ph="..." />
               </folding>
             </state>
           </provider>
@@ -61,16 +67,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deaths.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/deaths.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
-              <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="aftershocks.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/aftershocks.jsp">
           <provider selected="true" editor-type-id="text-editor">
@@ -86,8 +82,8 @@
       <file leaf-file-name="about.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/about.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="96" column="51" lean-forward="false" selection-start-line="96" selection-start-column="50" selection-end-line="96" selection-end-column="51" />
+            <state relative-caret-position="204">
+              <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -113,10 +109,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="heatmap.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="heatmap.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/heatmap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="-382">
               <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
               <folding />
             </state>
@@ -126,8 +122,8 @@
       <file leaf-file-name="scholarlyHtml.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/scholarlyHtml.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="1258">
+              <caret line="95" column="27" lean-forward="true" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -163,7 +159,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/data.tsv" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/test.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/aftershocks.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/graphic_deaths.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/earthquake-response.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/deaths.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/damages.css" />
@@ -171,12 +166,13 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/deaths.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/earthquake-propagation.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/aftershocks.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/about.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/nepal/earthquake/Controllers/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/aftershocks.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/damages.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/heatmap.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/about.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/graphic_deaths.js" />
       </list>
     </option>
   </component>
@@ -921,7 +917,7 @@
       <workItem from="1497300941332" duration="111000" />
       <workItem from="1497301188994" duration="119000" />
       <workItem from="1497331958724" duration="4405000" />
-      <workItem from="1497341051938" duration="5545000" />
+      <workItem from="1497341051938" duration="6208000" />
     </task>
     <task id="LOCAL-00001" summary="Integration Progress: 80%.">
       <created>1497343921008</created>
@@ -934,15 +930,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36135000" />
+    <option name="totallyTimeSpent" value="36798000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.5058565" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.15959005" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -960,9 +955,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.8491947" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.84040993" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.4941435" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.49121523" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1068,7 +1063,7 @@
         <state relative-caret-position="323">
           <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
           <folding>
-            <marker date="1497341412234" expanded="true" signature="696:725" ph="..." />
+            <marker date="1497347180069" expanded="true" signature="696:725" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1112,7 +1107,7 @@
         <state relative-caret-position="323">
           <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
           <folding>
-            <marker date="1497341412234" expanded="true" signature="696:725" ph="..." />
+            <marker date="1497347180069" expanded="true" signature="696:725" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1156,7 +1151,7 @@
         <state relative-caret-position="323">
           <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
           <folding>
-            <marker date="1497341412234" expanded="true" signature="696:725" ph="..." />
+            <marker date="1497347180069" expanded="true" signature="696:725" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1200,7 +1195,7 @@
         <state relative-caret-position="323">
           <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
           <folding>
-            <marker date="1497341412234" expanded="true" signature="696:725" ph="..." />
+            <marker date="1497347180069" expanded="true" signature="696:725" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1244,7 +1239,7 @@
         <state relative-caret-position="1241">
           <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="80" selection-end-column="17" />
           <folding>
-            <marker date="1497341412234" expanded="true" signature="696:725" ph="..." />
+            <marker date="1497347180069" expanded="true" signature="696:725" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1288,7 +1283,7 @@
         <state relative-caret-position="1241">
           <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="80" selection-end-column="17" />
           <folding>
-            <marker date="1497341412234" expanded="true" signature="696:725" ph="..." />
+            <marker date="1497347180069" expanded="true" signature="696:725" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1345,16 +1340,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/graphic_deaths.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1683">
-          <caret line="151" column="44" lean-forward="true" selection-start-line="151" selection-start-column="44" selection-end-line="151" selection-end-column="44" />
-          <folding>
-            <marker date="1497341412234" expanded="true" signature="696:725" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/deaths.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1387,14 +1372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/about.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="96" column="51" lean-forward="false" selection-start-line="96" selection-start-column="50" selection-end-line="96" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/donations.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1275">
@@ -1421,14 +1398,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/scholarlyHtml.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1449,9 +1418,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/heatmap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="-382">
           <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/scholarlyHtml.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="95" column="27" lean-forward="true" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/about.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/graphic_deaths.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="163" column="1" lean-forward="true" selection-start-line="163" selection-start-column="1" selection-end-line="163" selection-end-column="1" />
+          <folding>
+            <marker date="1497347180069" expanded="true" signature="696:725" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

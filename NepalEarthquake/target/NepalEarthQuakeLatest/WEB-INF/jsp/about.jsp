@@ -95,7 +95,8 @@ body {
 		<p><strong>Informatii despre aplicatie:</strong><br>
 		 <a href="scholarlyHtml">Raport tehnic</a><br>
 		 <a href="about.html">Gid utilizare</a><br>
-		 Filmulet prezentare<br></p>
+			<a href = "http://localhost:9999/swagger-ui.html"> API Rest</a>
+		 <p>Filmulet prezentare<br></p>
 
 
 	</div>
