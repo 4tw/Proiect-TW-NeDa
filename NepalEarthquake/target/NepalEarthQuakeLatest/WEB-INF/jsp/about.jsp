@@ -93,7 +93,7 @@ body {
 			<a href="https://webvr.info/">https://webvr.info/</a><br>
 			<a href="https://cdn.anychart.com/">https://cdn.anychart.com/</a><br></p>
 		<p><strong>Informatii despre aplicatie:</strong><br>
-		 <a href="about.hmtl">Raport tehnic</a><br>
+		 <a href="scholarlyHtml">Raport tehnic</a><br>
 		 <a href="about.html">Gid utilizare</a><br>
 		 Filmulet prezentare<br></p>
 

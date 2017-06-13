@@ -29,12 +29,15 @@ public class MainController {
     public String Damages(){return "damages";}
 
     @RequestMapping(path = "/aftershocks",method = RequestMethod.GET )
-    public String EarthquakeResponse(){return "aftershocks";}
+    public String Aftershocks(){return "aftershocks";}
 
     @RequestMapping(path = "/about",method = RequestMethod.GET )
-    public String Map(){return "about";}
+    public String About(){return "about";}
 
     @RequestMapping(path = "/donations",method = RequestMethod.GET )
-    public String EarthquakePropagation(){return "donations";}
+    public String Donations(){return "donations";}
+
+    @RequestMapping(path = "/scholarlyHtml", method = RequestMethod.GET)
+    public String ScholarlyHtml(){return "scholarlyHtml";}
 
 }

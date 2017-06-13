@@ -22,7 +22,7 @@
                 <li ><a href="index">Home</a></li>
                 <li ><a href="deaths">Deaths</a></li>
                 <li ><a href="damages">Damages</a></li>
-                <li ><a href="earthquake-propagation">Earthquake Propagation</a></li>
+                <li ><a href="donations">Donations</a></li>
                 <li class="active"><a href="aftershocks">Aftershocks</a></li>
                 <li><a href="about">About</a></li>
             </ul>
@@ -40,7 +40,7 @@
                         <li><a href="index">Home</a></li>
                         <li><a href="deaths">Deaths</a></li>
                         <li><a href="damages">Damages</a></li>
-                        <li><a href="earthquake-propagation">Earthquake Propagation</a></li>
+                        <li><a href="donations">Donations</a></li>
                         <li  class="active"><a href="aftershocks">Aftershocks</a></li>
                         <li><a href="about">About</a></li>
                     </ul>
@@ -57,7 +57,7 @@
     </div>
 
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFc7pJusrQeKWR-7FpNZUQEa4GUDadyi8&callback=myMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDX9nXsXlEVuMa1TJmsOaY7nj9M7jOGMj4&callback=myMap"></script>
 </div>
 </body>
 </html>

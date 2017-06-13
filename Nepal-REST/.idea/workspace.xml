@@ -2,14 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b771b81-68d6-4159-ab14-e64fbde2c5ce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../NepalEarthquake/src/main/webapp/resources/css/aftershocks.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../scholarly/index.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest.war" afterPath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest/WEB-INF/classes/com/nepal/earthquake/Controllers/MainController.class" afterPath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest/WEB-INF/classes/com/nepal/earthquake/Controllers/MainController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/target/classes/com/nepal/earthquake/Controllers/MainController.class" afterPath="$PROJECT_DIR$/../NepalEarthquake/target/classes/com/nepal/earthquake/Controllers/MainController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../NepalEarthquake/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/src/main/java/com/nepal/earthquake/Controllers/MainController.java" afterPath="$PROJECT_DIR$/../NepalEarthquake/src/main/java/com/nepal/earthquake/Controllers/MainController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/src/main/webapp/WEB-INF/jsp/about.jsp" afterPath="$PROJECT_DIR$/../NepalEarthquake/src/main/webapp/WEB-INF/jsp/about.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/src/main/webapp/WEB-INF/jsp/aftershocks.jsp" afterPath="$PROJECT_DIR$/../NepalEarthquake/src/main/webapp/WEB-INF/jsp/aftershocks.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/src/main/webapp/WEB-INF/jsp/damages.jsp" afterPath="$PROJECT_DIR$/../NepalEarthquake/src/main/webapp/WEB-INF/jsp/damages.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/src/main/webapp/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/../NepalEarthquake/src/main/webapp/WEB-INF/jsp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest/WEB-INF/jsp/about.jsp" afterPath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest/WEB-INF/jsp/about.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest/WEB-INF/jsp/aftershocks.jsp" afterPath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest/WEB-INF/jsp/aftershocks.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest/WEB-INF/jsp/damages.jsp" afterPath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest/WEB-INF/jsp/damages.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/../NepalEarthquake/target/NepalEarthQuakeLatest/WEB-INF/jsp/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
