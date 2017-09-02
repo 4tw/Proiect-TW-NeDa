@@ -1,0 +1,48 @@
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 40%;
+    margin: auto;
+    height : 60%;
+}
+body {
+    background: url("/resources/img/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+p{
+    /*font:rgb(0,0,0);*/
+    font-size:17px;
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+div{
+    background:transparent;
+    margin:0 auto;
+}
+.container-fluid {
+    margin: 0 auto;
+    background:transparent ;
+    width: 1000px;
+}
+
+#map{
+    height: 5px;
+    overflow: hidden;
+    padding-bottom: 30.25%;
+    padding-top: 50px;
+    position: relative;
+}
+.button {
+    background-color: #e7e7e7;
+    color: black; /* Gray */
+    float: left;
+    border: none;
+    color: black;
+    padding: 10px 25px;
+    font-size: 14px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
